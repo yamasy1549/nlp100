@@ -19,3 +19,5 @@ p X & Y
 p X - Y
 puts X.include?("se")
 puts Y.include?("se")
+
+# Rubyの | & - はPythonと同じっぽい

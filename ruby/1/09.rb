@@ -5,3 +5,6 @@ map = str.split(/\s/).map do |word|
 end
 
 puts map.join(" ")
+
+# Array#shuffle -> Array
+# 配列の要素をランダムシャッフルし、その結果を配列として返す
