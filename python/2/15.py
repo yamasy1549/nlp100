@@ -3,8 +3,7 @@ import sys
 filename = "hightemp.txt"
 
 with open(filename) as f:
-    lines = f.readlines()
     n = int(sys.argv[1])
 
-    for line in lines[-n:]:
+    for line in f.readlines()[-n:]:
         print(line[:-1])
