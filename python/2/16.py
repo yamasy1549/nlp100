@@ -7,4 +7,6 @@ n = int(sys.argv[1])
 
 for i in range(n):
     chunk = lines[(l+1)*i//n : (l+1)*(i+1)//n]
-    open('../../output/hightemp16-{0}.txt'.format(i), 'w').write(''.join(chunk))
+
+    with open('../../output/hightemp16-{0}.txt'.format(i), "w") as f:
+        f.write(''.join(chunk))
