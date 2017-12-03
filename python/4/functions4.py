@@ -29,7 +29,7 @@ def ngram(s, n):
 def word_freq(sentences):
     freqs = defaultdict(int)
 
-    for sentence in morphological():
+    for sentence in sentences:
         for word in sentence:
             surface = word["surface"]
             freqs[surface] += 1
