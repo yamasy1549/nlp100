@@ -7,9 +7,13 @@ def morphological(filename="neko.txt.mecab"):
     sentence_list = []
     sentence = []
 
-    with open(filename) as f:
-        for line in f.readlines():
-            if line != "EOS\n":
+    with open(filename) as lines:
+        for line in lines:
+            if line == "EOS\n":
+                if len(sentence) > 0:
+                    sentence_list.append(sentence)
+                    sentence = []
+            else:
                 elements = re.split("[,\t]", line)
                 word = {
                     "surface": elements[0],
@@ -18,9 +22,6 @@ def morphological(filename="neko.txt.mecab"):
                     "pos1": elements[2]
                 }
                 sentence.append(word)
-                if word["surface"] == "。":
-                    sentence_list.append(sentence)
-                    sentence = []
     return sentence_list
 
 def ngram(s, n):

@@ -12749,7 +12749,6 @@ Savagetea
 嬢さん
 奥さん
 いっしょ
-——」
 いや
 多々良さん
 奥さん
@@ -16155,7 +16154,6 @@ Hierophilus
 香裏
 相思
 この世
-口づけ
 これ
 主人
 嘆息
@@ -23343,7 +23341,6 @@ Archaiomelesidonophrunicherata
 義捐
 こと
 只管希望
-候敬具
 華族様
 主人
 黙読一過
@@ -23463,11 +23460,9 @@ Archaiomelesidonophrunicherata
 表章
 成下度
 懇願
-敬具
 日本女子裁縫
-高等大学院校長
+校長
 縫田針作
-九拝
 主人
 鄭重
 書面
@@ -23568,7 +23563,6 @@ Archaiomelesidonophrunicherata
 先生何
 巣鴨
 天道公平
-再拝
 針作君
 九拝
 再拝
@@ -26761,7 +26755,6 @@ Archaiomelesidonophrunicherata
 みんな逆
 それ
 ——
-——」
 八木さん
 八木さん
 大分閉口
@@ -27058,7 +27051,6 @@ Archaiomelesidonophrunicherata
 可哀想
 もの
 そう
-——」
 馬鹿
 馬鹿
 みんな
@@ -27089,7 +27081,6 @@ Archaiomelesidonophrunicherata
 飄然
 よう
 飄然
-——」
 多々良三平さん
 山の芋
 多々良さん
@@ -27196,7 +27187,6 @@ Archaiomelesidonophrunicherata
 化粧
 金田さん
 いや
-——」
 それ
 ——
 馬鹿竹
@@ -28787,7 +28777,6 @@ Archaiomelesidonophrunicherata
 雪江さん
 遠慮
 けらけら
-十一
 床の間
 碁盤
 迷亭君
