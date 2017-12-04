@@ -7,5 +7,5 @@ for i, word in enumerate(s.split(), start=1):
     else:
         word_dic[word[:2]] = i
 
-# チェックのためvalueでsortして出力
-print(sorted(word_dic.items(), key=lambda x:x[1]))
+for key, val in sorted(word_dic.items(), key=lambda x:x[1]):
+    print(key, val)

@@ -1,5 +1,24 @@
-{'se', 'ra', 'ph', 'is', 'ad', 'ar', 'ag', 'di', 'gr', 'pa', 'ap'}
-{'pa', 'ra', 'ar', 'ap'}
-{'ad', 'se', 'is', 'di'}
+ad
+ag
+ap
+ar
+di
+gr
+is
+pa
+ph
+ra
+se
+
+ap
+ar
+pa
+ra
+
+ad
+di
+is
+se
+
 True
 False

@@ -7,8 +7,17 @@ s2 = "paragraph"
 X = ngram(s1, 2)
 Y = ngram(s2, 2)
 
-print(set(X) | set(Y))
-print(set(X) & set(Y))
-print(set(X) - set(Y))
+for item in sorted(set(X) | set(Y)):
+    print(item)
+print()
+
+for item in sorted(set(X) & set(Y)):
+    print(item)
+print()
+
+for item in sorted(set(X) - set(Y)):
+    print(item)
+print()
+
 print('se' in X)
 print('se' in Y)
