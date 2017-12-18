@@ -12,7 +12,7 @@ dependencies.each do |sentence|
         sentence[src].surfaces
       end
 
-      puts "#{predicate}\t#{particle_cases.join(' ')}\t#{chunks.join(' ')}" unless particle_cases.empty?
+      puts "#{predicate}\t#{particle_cases.compact.join(' ')}\t#{chunks.compact.join(' ')}" unless particle_cases.empty?
     end
   end
 end
