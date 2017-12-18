@@ -4,17 +4,17 @@ dependencies.each do |sentence|
   sentence.each do |chunk|
     if chunk.has_sahen_wo? && chunk.depends?
       dst = sentence[chunk.dst]
-      verb = dst.morphs.find{ |chunk| chunk.pos == "動詞" }
+      verb = dst.first_morph("動詞")
       if verb
         predicate = chunk.sahen_wo + verb.base
 
-        src_chunks = dst.srcs.map{ |src| sentence[src] }.reject{ |elem| elem == chunk }
-        src_particles = src_chunks.map{ |chunk| chunk.morphs.reverse.find{ |morph| morph.pos == "助詞" }&.surface }
-        src_pairs = src_chunks.map(&:surfaces).zip(src_particles).reject{ |chunk, particle| chunk.nil? || particle.nil? }
-        src_pairs = src_pairs.sort_by{ |_surfaces, particle| particle }.transpose
+        src_chunks = dst.srcs.map { |src| sentence[src] unless sentence[src] == chunk }.compact
+        src_particles = src_chunks.map { |chunk| chunk.first_morph("助詞")&.surface }.compact
+        if src_chunks.size == src_particles.size
+          src_pairs = src_chunks.map(&:surfaces).zip(src_particles)
+          surfaces, particles = src_pairs.sort_by{ |_, particle| particle }.transpose
 
-        if src_pairs.present?
-          puts "#{predicate}\t#{src_pairs[1].join(' ')}\t#{src_pairs[0].join(' ')}"
+          puts [predicate, particles.join(' '), surfaces.join(' ')].join("\t") if particles.present?
         end
       end
     end

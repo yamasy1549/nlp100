@@ -2,17 +2,17 @@ require './util'
 
 dependencies.each do |sentence|
   sentence.each do |chunk|
-    predicate = chunk.morphs.find { |morph| morph.pos == "動詞" }&.base
-    if predicate && !chunk.surfaces.empty? && !sentence[chunk.dst].surfaces.empty?
-      particle_cases = chunk.srcs.map do |src|
-        sentence[src].morphs.find { |morph| morph.pos == "助詞" }&.base
-      end
+    verb = chunk.first_morph("動詞")
+    if verb
+      predicate = verb.base
+      particles = chunk.srcs.map { |src| sentence[src].first_morph("助詞")&.base }.compact
+      chunks = chunk.srcs.map { |src| sentence[src].surfaces if sentence[src].first_morph("助詞") }.compact
+      particles, chunks = particles.zip(chunks).sort do |a, b|
+        # 同じ助詞なら文節でもソート
+        (a.first <=> b.first).nonzero? || (a.last <=> b.last)
+      end.transpose
 
-      chunks = chunk.srcs.map do |src|
-        sentence[src].surfaces
-      end
-
-      puts "#{predicate}\t#{particle_cases.compact.join(' ')}\t#{chunks.compact.join(' ')}" unless particle_cases.empty?
+      puts [predicate, particles.join(' '), chunks.join(' ')].join("\t") if particles.present?
     end
   end
 end

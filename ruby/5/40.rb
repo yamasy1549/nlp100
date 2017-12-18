@@ -1,5 +1,6 @@
 require './util'
 
+# "名前はまだ無い。"
 sentence = dependencies[2]
 
 sentence.each do |chunk|

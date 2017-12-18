@@ -1,6 +1,7 @@
 require 'gviz'
 require './util'
 
+# "どこで生れたかとんと見当がつかぬ"
 sentence = dependencies[3]
 
 Graph do

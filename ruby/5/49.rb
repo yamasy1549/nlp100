@@ -1,7 +1,7 @@
 require './util'
 
 dependencies.each do |sentence|
-  noun_pairs = sentence.select { |chunk| chunk.poss.include?("名詞") }.combination(2)
+  noun_pairs = sentence.select { |chunk| chunk.has_poss?("名詞") }.combination(2)
 
   noun_pairs.each do |i, j|
     noun_i = i.morphs.find { |morph| morph.pos == "名詞" }
