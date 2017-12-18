@@ -7,7 +7,7 @@ dependencies.each do |sentence|
       particle_cases = chunk.srcs.map do |src|
         sentence[src].morphs.find { |morph| morph.pos == "助詞" }&.base
       end
-      puts "#{predicate}\t#{particle_cases.join(' ')}" unless particle_cases.empty?
+      puts "#{predicate}\t#{particle_cases.compact.sort.join(' ')}" if particle_cases.compact.present?
     end
   end
 end
