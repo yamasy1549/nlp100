@@ -1,8 +1,8 @@
-この 1
-書生というのは 7
-時々 4
-我々を 4
-捕えて 5
-煮て 6
-食うという 7
-話である。 -1
+morphs: この, dst: 1, srcs: []
+morphs: 書生というのは, dst: 7, srcs: [0]
+morphs: 時々, dst: 4, srcs: []
+morphs: 我々を, dst: 4, srcs: []
+morphs: 捕えて, dst: 5, srcs: [2, 3]
+morphs: 煮て, dst: 6, srcs: [4]
+morphs: 食うという, dst: 7, srcs: [5]
+morphs: 話である, dst: -1, srcs: [1, 6]

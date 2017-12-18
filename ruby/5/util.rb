@@ -1,4 +1,5 @@
 require 'pry'
+require 'active_record'
 
 class Array
   def ngram(n)
@@ -26,15 +27,13 @@ class Chunk
     @srcs = srcs
   end
 
+  # どこかの文節に係っているか
   def depends?
     self.dst != -1
   end
 
   def surfaces
-    surfaces = self.morphs.map do |morph|
-      morph.surface unless morph.pos == "記号"
-    end
-    surfaces.join
+    self.morphs.map { |morph| morph.surface unless morph.pos == "記号" }.join
   end
 
   def poss
@@ -42,11 +41,22 @@ class Chunk
   end
 
   def path_to_root(sentence)
-    if self.dst == -1
-      [self]
-    else
-      [self] + sentence[self.dst].path_to_root(sentence)
+    self.depends? ? [self] + sentence[self.dst].path_to_root(sentence) : [self]
+  end
+
+  def sahen_wo
+    self.morphs.each.with_index do |morph, i|
+      next_morph = self.morphs[i+1]
+      if next_morph.present? && morph.pos == "名詞" && morph.pos1 == "サ変接続" && next_morph.pos == "助詞" && next_morph.surface == "を"
+        return morph.surface + next_morph.surface
+      else
+        return ''
+      end
     end
+  end
+
+  def has_sahen_wo?
+    self.sahen_wo.present?
   end
 end
 
@@ -59,20 +69,18 @@ def dependencies(filename="../../python/5/neko.txt.cabocha")
 
     lines.each.with_index do |line, i|
       if line == "EOS\n"
-        sentence << chunk unless chunk.morphs.empty?
+        sentence << chunk if chunk.morphs.present?
         sentence.each.with_index do |chunk, i|
-          unless chunk.dst == -1
-            sentence[chunk.dst].srcs << i
-          end
+          sentence[chunk.dst].srcs << i if chunk.depends?
         end
 
-        sentence_list << sentence unless sentence.empty?
+        sentence_list << sentence if sentence.present?
         sentence = []
         chunk = Chunk.new
       end
 
       line.scan(/\*\s\d+\s(?<dst>-?\d+)D/) do |dst|
-        sentence << chunk unless chunk.morphs.empty?
+        sentence << chunk if chunk.morphs.present?
         chunk = Chunk.new
         chunk.dst = dst[0].to_i
       end
@@ -82,7 +90,7 @@ def dependencies(filename="../../python/5/neko.txt.cabocha")
       end
     end
 
-    sentence << chunk unless chunk.morphs.empty?
+    sentence << chunk if chunk.morphs.present?
   end
 
   sentence_list

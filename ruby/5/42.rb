@@ -2,8 +2,8 @@ require './util'
 
 dependencies.each do |sentence|
   sentence.each do |chunk|
-    if chunk.depends? && !chunk.surfaces.empty? && !sentence[chunk.dst].surfaces.empty?
-      puts "#{chunk.surfaces}\t#{sentence[chunk.dst].surfaces}"
+    if chunk.depends? && chunk.surfaces.present? && sentence[chunk.dst].surfaces.present?
+      puts [chunk.surfaces, sentence[chunk.dst].surfaces].join("\t")
     end
   end
 end
