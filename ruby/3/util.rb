@@ -17,9 +17,10 @@ end
 def raw_template_to_hash(article)
   templates = {}
 
-  raw_template = article.slice(/^\{{2}基礎情報.*?$\n([\s\S]+)^\}{2}$/m, 1)
-  raw_template.scan(/\|(?<key>.+?)\s*=\s*(?<val>.+?)(?:(?=\n$)|(?=\n\|))/m) do |key, val|
-    templates[key] = block_given? ? yield(val) : val
+  article.match(/^\{{2}基礎情報.*?$\n(.+?)^\}{2}$/m) do |raw_template|
+    raw_template[1].scan(/\|(?<key>.+?)\s*=\s*(?<val>.+?)(?:(?=\n$)|(?=\n\|))/m) do |key, val|
+      templates[key] = block_given? ? yield(val) : val
+    end
   end
 
   templates
@@ -42,7 +43,7 @@ class String
 
   def remove_innerlink
     self.gsub(
-      /\[{2}(?:[^|]*?\|?)?(?<link>[^|]*?)\]{2}/,
+      /\[{2}(?:[^|]*?\|?)(?<link>[^|]*?)\]{2}/,
       '\k<link>'
     )
   end
