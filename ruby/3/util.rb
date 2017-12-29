@@ -1,20 +1,22 @@
 require 'zlib'
 require 'json'
 
-def gzip2hash(filename="../../python/3/jawiki-country.json.gz")
+def gzip2hash(filename: '../../python/3/jawiki-country.json.gz')
   articles = {}
-  gzip = Zlib::GzipReader.open(filename)
-  gzip.each_line do |line|
-    article = JSON.parse(line)
-    articles[article["title"]] = article["text"]
+
+  Zlib::GzipReader.open(filename) do |lines|
+    lines.each do |line|
+      article = JSON.parse(line)
+      articles[article['title']] = article['text']
+    end
   end
-  gzip.close
 
   articles
 end
 
 def raw_template_to_hash(article)
   templates = {}
+
   raw_template = article.slice(/^\{{2}基礎情報.*?$\n([\s\S]+)^\}{2}$/m, 1)
   raw_template.scan(/\|(?<key>.+?)\s*=\s*(?<val>.+?)(?:(?=\n$)|(?=\n\|))/m) do |key, val|
     templates[key] = block_given? ? yield(val) : val
