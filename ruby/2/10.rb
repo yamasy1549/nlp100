@@ -1,4 +1,4 @@
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 
 puts File.readlines(filename).count
 

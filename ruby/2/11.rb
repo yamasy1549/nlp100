@@ -1,4 +1,4 @@
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 
 lines = File.readlines(filename)
 lines.each do |line|

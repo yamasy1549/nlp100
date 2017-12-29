@@ -1,6 +1,6 @@
 require 'pry'
 
-def morphologies(filename="../../python/4/neko.txt.mecab")
+def morphologies(filename='../../data/neko.txt.mecab')
   sentence_list = []
 
   File.open(filename) do |lines|

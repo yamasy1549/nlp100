@@ -1,6 +1,6 @@
 require "csv"
 
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 table = CSV.table(filename, col_sep: "\t", headers: %w(pref city temp day))
 prefs = table[:pref].group_by(&:itself).map { |k, v| { "#{k}": v.count } }
 

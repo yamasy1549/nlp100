@@ -1,7 +1,7 @@
 from collections import defaultdict
 import pandas as pd
 
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 df = pd.read_csv(filename, header=None, delimiter='\t', names=('pref', 'city', 'temp', 'date'))
 prefs = defaultdict(int)
 

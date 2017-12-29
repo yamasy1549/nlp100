@@ -1,4 +1,4 @@
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 lines = File.readlines(filename)
 
 n = ARGV[0].to_i

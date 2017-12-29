@@ -28,7 +28,7 @@ class Chunk
 
   # surfaceをまとめて文字列で返す
   def surfaces(symbol: false)
-    surfaces = symbol ? self.morphs : self.morphs.reject { |morph| morph.pos == "記号" }
+    surfaces = symbol ? self.morphs : self.morphs.reject { |morph| morph.pos == '記号' }
     surfaces.map { |morph| morph.surface }.join
   end
 
@@ -50,9 +50,9 @@ class Chunk
   def sahen_wo
     self.morphs.each.with_index do |morph, i|
       next_morph = self.morphs[i+1]
-      if next_morph.present? && next_morph.pos == "助詞" && next_morph.surface == "を" \
-         && morph.pos == "名詞" && morph.pos1 == "サ変接続"
-        return morph.surface + "を"
+      if next_morph.present? && next_morph.pos == '助詞' && next_morph.surface == 'を' \
+         && morph.pos == '名詞' && morph.pos1 == 'サ変接続'
+        return morph.surface + 'を'
       else
         return ''
       end
@@ -64,10 +64,10 @@ class Chunk
   end
 end
 
-def dependencies(filename: "../../python/5/neko.txt.cabocha")
+def dependencies(filename: '../../data/neko.txt.cabocha')
   sentence_list = []
 
-  File.open(filename, "r") do |lines|
+  File.open(filename, 'r') do |lines|
     sentence = []
     chunk = Chunk.new
 

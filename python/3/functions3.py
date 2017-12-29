@@ -2,7 +2,7 @@ import re
 import json
 import gzip
 
-def gzip2dic(filename="jawiki-country.json.gz"):
+def gzip2dic(filename="../../data/jawiki-country.json.gz"):
     articles = {}
     with gzip.open(filename, "rt") as lines:
         for article in lines:

@@ -1,6 +1,6 @@
 import sys
 
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 
 with open(filename) as f:
     n = int(sys.argv[1])

@@ -1,7 +1,7 @@
 require 'zlib'
 require 'json'
 
-def gzip2hash(filename: '../../python/3/jawiki-country.json.gz')
+def gzip2hash(filename: '../../data/jawiki-country.json.gz')
   articles = {}
 
   Zlib::GzipReader.open(filename) do |lines|

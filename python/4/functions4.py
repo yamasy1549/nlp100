@@ -3,7 +3,7 @@ from collections import defaultdict
 
 # mecab neko.txt -o neko.txt.mecab
 
-def morphological(filename="neko.txt.mecab"):
+def morphological(filename="../../data/neko.txt.mecab"):
     sentence_list = []
     sentence = []
 

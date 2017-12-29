@@ -1,6 +1,6 @@
 import sys
 
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 lines = open(filename).readlines()
 l = len(lines)
 n = int(sys.argv[1])

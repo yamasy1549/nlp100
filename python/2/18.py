@@ -1,7 +1,7 @@
 import sys
 import pandas as pd
 
-filename = "hightemp.txt"
+filename = "../../data/hightemp.txt"
 df = pd.read_csv(filename, header=None, delimiter='\t',
         names=('pref', 'city', 'temp', 'date'))
 df = df.sort_values(by=['temp', 'city'], ascending=False)
