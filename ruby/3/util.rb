@@ -50,7 +50,7 @@ class String
 
   def remove_link
     self.gsub(
-      /\[\S+\s(?<title>[^\[\]]+)\]/,
+      /\[\S+\s?(?<title>[^\[\]]+)\]/,
       '\k<title>'
     )
   end
