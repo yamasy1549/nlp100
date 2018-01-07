@@ -1,13 +1,13 @@
 Natural	Natur
 language	languag
 processing	process
-	
+
 From	From
 Wikipedia,	Wikipedia,
 the	the
 free	free
 encyclopedia	encyclopedia
-	
+
 Natural	Natur
 language	languag
 processing	process
@@ -32,7 +32,7 @@ and	and
 human	human
 (natural)	(natural)
 languages.	languages.
-	
+
 As	As
 such,	such,
 NLP	NLP
@@ -44,7 +44,7 @@ area	area
 of	of
 humani-computer	humani-comput
 interaction.	interaction.
-	
+
 Many	Mani
 challenges	challeng
 in	in
@@ -72,14 +72,14 @@ involve	involv
 natural	natur
 language	languag
 generation.	generation.
-	
+
 History	Histori
-	
+
 The	The
 history	histori
 of	of
 NLP	NLP
-generally	gener
+generally	general
 starts	start
 in	in
 the	the
@@ -92,7 +92,7 @@ found	found
 from	from
 earlier	earlier
 periods.	periods.
-	
+
 In	In
 1950,	1950,
 Alan	Alan
@@ -119,7 +119,7 @@ a	a
 criterion	criterion
 of	of
 intelligence.	intelligence.
-	
+
 The	The
 Georgetown	Georgetown
 experiment	experi
@@ -137,7 +137,7 @@ Russian	Russian
 sentences	sentenc
 into	into
 English.	English.
-	
+
 The	The
 authors	author
 claimed	claim
@@ -154,11 +154,11 @@ be	be
 a	a
 solved	solv
 problem.	problem.
-	
+
 However,	However,
 real	real
 progress	progress
-was	wa
+was	was
 much	much
 slower,	slower,
 and	and
@@ -185,17 +185,17 @@ funding	fund
 for	for
 machine	machin
 translation	translat
-was	wa
+was	was
 dramatically	dramat
 reduced.	reduced.
-	
+
 Little	Littl
 further	further
 research	research
 in	in
 machine	machin
 translation	translat
-was	wa
+was	was
 conducted	conduct
 until	until
 the	the
@@ -210,7 +210,7 @@ translation	translat
 systems	system
 were	were
 developed.	developed.
-	
+
 Some	Some
 notably	notabl
 successful	success
@@ -219,7 +219,7 @@ systems	system
 developed	develop
 in	in
 the	the
-1960s	1960
+1960s	1960s
 were	were
 SHRDLU,	SHRDLU,
 a	a
@@ -250,7 +250,7 @@ between	between
 1964	1964
 to	to
 1966.	1966.
-	
+
 Using	Using
 almost	almost
 no	no
@@ -264,10 +264,10 @@ ELIZA	ELIZA
 sometimes	sometim
 provided	provid
 a	a
-startlingly	startlingli
+startlingly	startl
 human-like	human-lik
 interaction.	interaction.
-	
+
 When	When
 the	the
 "patient"	"patient"
@@ -281,33 +281,33 @@ ELIZA	ELIZA
 might	might
 provide	provid
 a	a
-generic	gener
+generic	generic
 response,	response,
 for	for
 example,	example,
 responding	respond
 to	to
-"My	"My
+"My	"Mi
 head	head
 hurts"	hurts"
 with	with
-"Why	"Why
+"Why	"Whi
 do	do
 you	you
-say	sai
+say	say
 your	your
 head	head
 hurts?".	hurts?".
-	
+
 During	Dure
 the	the
-1970s	1970
+1970s	1970s
 many	mani
 programmers	programm
 began	began
 to	to
 write	write
-'conceptual	'conceptu
+'conceptual	conceptu
 ontologies',	ontologies',
 which	which
 structured	structur
@@ -316,9 +316,9 @@ information	inform
 into	into
 computer-understandable	computer-understand
 data.	data.
-	
+
 Examples	Exampl
-are	ar
+are	are
 MARGIE	MARGIE
 (Schank,	(Schank,
 1975),	1975),
@@ -342,9 +342,9 @@ Plot	Plot
 Units	Unit
 (Lehnert	(Lehnert
 1981).	1981).
-	
+
 During	Dure
-this	thi
+this	this
 time,	time,
 many	mani
 chatterbots	chatterbot
@@ -355,7 +355,7 @@ PARRY,	PARRY,
 Racter,	Racter,
 and	and
 Jabberwacky.	Jabberwacky.
-	
+
 Up	Up
 to	to
 the	the
@@ -371,7 +371,7 @@ sets	set
 of	of
 hand-written	hand-written
 rules.	rules.
-	
+
 Starting	Start
 in	in
 the	the
@@ -379,7 +379,7 @@ late	late
 1980s,	1980s,
 however,	however,
 there	there
-was	wa
+was	was
 a	a
 revolution	revolut
 in	in
@@ -394,9 +394,9 @@ algorithms	algorithm
 for	for
 language	languag
 processing.	processing.
-	
-This	Thi
-was	wa
+
+This	This
+was	was
 due	due
 to	to
 both	both
@@ -408,7 +408,7 @@ computational	comput
 power	power
 resulting	result
 from	from
-Moore's	Moore'
+Moore's	Moor
 Law	Law
 and	and
 the	the
@@ -432,17 +432,17 @@ discouraged	discourag
 the	the
 sort	sort
 of	of
-corpus	corpu
+corpus	corpus
 linguistics	linguist
 that	that
-underlies	underli
+underlies	under
 the	the
 machine-learning	machine-learn
 approach	approach
 to	to
 language	languag
 processing.	processing.
-	
+
 Some	Some
 of	of
 the	the
@@ -465,7 +465,7 @@ to	to
 existing	exist
 hand-written	hand-written
 rules.	rules.
-	
+
 However,	However,
 Part	Part
 of	of
@@ -473,7 +473,7 @@ speech	speech
 tagging	tag
 introduced	introduc
 the	the
-use	us
+use	use
 of	of
 Hidden	Hidden
 Markov	Markov
@@ -483,7 +483,7 @@ NLP,	NLP,
 and	and
 increasingly,	increasingly,
 research	research
-has	ha
+has	has
 focused	focus
 on	on
 statistical	statist
@@ -506,7 +506,7 @@ up	up
 the	the
 input	input
 data.	data.
-	
+
 The	The
 cache	cach
 language	languag
@@ -519,17 +519,17 @@ recognition	recognit
 systems	system
 now	now
 rely	reli
-are	ar
+are	are
 examples	exampl
 of	of
 such	such
 statistical	statist
 models.	models.
-	
+
 Such	Such
 models	model
-are	ar
-generally	gener
+are	are
+generally	general
 more	more
 robust	robust
 when	when
@@ -541,7 +541,7 @@ input	input
 that	that
 contains	contain
 errors	error
-(as	(a
+(as	(as
 is	is
 very	veri
 common	common
@@ -562,7 +562,7 @@ system	system
 comprising	compris
 multiple	multipl
 subtasks.	subtasks.
-	
+
 Many	Mani
 of	of
 the	the
@@ -591,7 +591,7 @@ statistical	statist
 models	model
 were	were
 developed.	developed.
-	
+
 These	These
 systems	system
 were	were
@@ -640,7 +640,7 @@ corresponding	correspond
 systems	system
 of	of
 government.	government.
-	
+
 However,	However,
 most	most
 other	other
@@ -658,7 +658,7 @@ by	by
 these	these
 systems,	systems,
 which	which
-was	wa
+was	was
 (and	(and
 often	often
 continues	continu
@@ -673,7 +673,7 @@ success	success
 of	of
 these	these
 systems.	systems.
-	
+
 As	As
 a	a
 result,	result,
@@ -682,7 +682,7 @@ great	great
 deal	deal
 of	of
 research	research
-has	ha
+has	has
 gone	gone
 into	into
 methods	method
@@ -695,11 +695,11 @@ limited	limit
 amounts	amount
 of	of
 data.	data.
-	
+
 Recent	Recent
 research	research
-has	ha
-increasingly	increasingli
+has	has
+increasingly	increas
 focused	focus
 on	on
 unsupervised	unsupervis
@@ -707,17 +707,17 @@ and	and
 semi-supervised	semi-supervis
 learning	learn
 algorithms.	algorithms.
-	
+
 Such	Such
 algorithms	algorithm
-are	ar
+are	are
 able	abl
 to	to
 learn	learn
 from	from
 data	data
 that	that
-has	ha
+has	has
 not	not
 been	been
 hand-annotated	hand-annot
@@ -726,7 +726,7 @@ the	the
 desired	desir
 answers,	answers,
 or	or
-using	us
+using	use
 a	a
 combination	combin
 of	of
@@ -734,9 +734,9 @@ annotated	annot
 and	and
 non-annotated	non-annot
 data.	data.
-	
+
 Generally,	Generally,
-this	thi
+this	this
 task	task
 is	is
 much	much
@@ -758,7 +758,7 @@ amount	amount
 of	of
 input	input
 data.	data.
-	
+
 However,	However,
 there	there
 is	is
@@ -790,16 +790,16 @@ for	for
 the	the
 inferior	inferior
 results.	results.
-	
+
 NLP	NLP
-using	us
+using	use
 machine	machin
 learning	learn
-	
+
 Modern	Modern
 NLP	NLP
 algorithms	algorithm
-are	ar
+are	are
 based	base
 on	on
 machine	machin
@@ -808,7 +808,7 @@ especially	especi
 statistical	statist
 machine	machin
 learning.	learning.
-	
+
 The	The
 paradigm	paradigm
 of	of
@@ -825,7 +825,7 @@ attempts	attempt
 at	at
 language	languag
 processing.	processing.
-	
+
 Prior	Prior
 implementations	implement
 of	of
@@ -842,15 +842,15 @@ large	larg
 sets	set
 of	of
 rules.	rules.
-	
+
 The	The
 machine-learning	machine-learn
 paradigm	paradigm
 calls	call
 instead	instead
 for	for
-using	us
-general	gener
+using	use
+general	general
 learning	learn
 algorithms	algorithm
 -	-
@@ -878,9 +878,9 @@ of	of
 typical	typic
 real-world	real-world
 examples.	examples.
-	
+
 A	A
-corpus	corpu
+corpus	corpus
 (plural,	(plural,
 "corpora")	"corpora")
 is	is
@@ -903,7 +903,7 @@ values	valu
 to	to
 be	be
 learned.	learned.
-	
+
 Many	Mani
 different	differ
 classes	class
@@ -917,7 +917,7 @@ applied	appli
 to	to
 NLP	NLP
 tasks.	tasks.
-	
+
 These	These
 algorithms	algorithm
 take	take
@@ -929,13 +929,13 @@ set	set
 of	of
 "features"	"features"
 that	that
-are	ar
-generated	gener
+are	are
+generated	generat
 from	from
 the	the
 input	input
 data.	data.
-	
+
 Some	Some
 of	of
 the	the
@@ -962,11 +962,11 @@ that	that
 were	were
 then	then
 common.	common.
-	
+
 Increasingly,	Increasingly,
 however,	however,
 research	research
-has	ha
+has	has
 focused	focus
 on	on
 statistical	statist
@@ -985,18 +985,18 @@ to	to
 each	each
 input	input
 feature.	feature.
-	
+
 Such	Such
 models	model
 have	have
 the	the
 advantage	advantag
 that	that
-they	thei
+they	they
 can	can
 express	express
 the	the
-relative	rel
+relative	relat
 certainty	certainti
 of	of
 many	mani
@@ -1024,7 +1024,7 @@ of	of
 a	a
 larger	larger
 system.	system.
-	
+
 Systems	System
 based	base
 on	on
@@ -1036,16 +1036,16 @@ advantages	advantag
 over	over
 hand-produced	hand-produc
 rules:	rules:
-	
+
 The	The
 learning	learn
 procedures	procedur
-used	us
+used	use
 during	dure
 machine	machin
 learning	learn
 automatically	automat
-focus	focu
+focus	focus
 on	on
 the	the
 most	most
@@ -1061,7 +1061,7 @@ it	it
 is	is
 often	often
 not	not
-obvious	obviou
+obvious	obvious
 at	at
 all	all
 where	where
@@ -1070,13 +1070,13 @@ effort	effort
 should	should
 be	be
 directed.	directed.
-	
+
 Automatic	Automat
 learning	learn
 procedures	procedur
 can	can
 make	make
-use	us
+use	use
 of	of
 statistical	statist
 inference	infer
@@ -1085,7 +1085,7 @@ to	to
 produce	produc
 models	model
 that	that
-are	ar
+are	are
 robust	robust
 to	to
 unfamiliar	unfamiliar
@@ -1113,12 +1113,12 @@ or	or
 words	word
 accidentally	accident
 omitted).	omitted).
-	
+
 Generally,	Generally,
 handling	handl
 such	such
 input	input
-gracefully	gracefulli
+gracefully	grace
 with	with
 hand-written	hand-written
 rules	rule
@@ -1141,7 +1141,7 @@ difficult,	difficult,
 error-prone	error-pron
 and	and
 time-consuming.	time-consuming.
-	
+
 Systems	System
 based	base
 on	on
@@ -1160,7 +1160,7 @@ supplying	suppli
 more	more
 input	input
 data.	data.
-	
+
 However,	However,
 systems	system
 based	base
@@ -1187,7 +1187,7 @@ much	much
 more	more
 difficult	difficult
 task.	task.
-	
+
 In	In
 particular,	particular,
 there	there
@@ -1212,7 +1212,7 @@ more	more
 and	and
 more	more
 unmanageable.	unmanageable.
-	
+
 However,	However,
 creating	creat
 more	more
@@ -1233,7 +1233,7 @@ number	number
 of	of
 man-hours	man-hour
 worked,	worked,
-generally	gener
+generally	general
 without	without
 significant	signific
 increases	increas
@@ -1244,7 +1244,7 @@ of	of
 the	the
 annotation	annot
 process.	process.
-	
+
 The	The
 subfield	subfield
 of	of
@@ -1268,7 +1268,7 @@ and	and
 peak	peak
 body	bodi
 SIGNLL	SIGNLL
-are	ar
+are	are
 sponsored	sponsor
 by	by
 ACL,	ACL,
@@ -1282,7 +1282,7 @@ Linguistics	Linguist
 and	and
 Language	Languag
 Acquisition.	Acquisition.
-	
+
 When	When
 the	the
 aims	aim
@@ -1310,4 +1310,4 @@ field	field
 of	of
 Computational	Comput
 Psycholinguistics.	Psycholinguistics.
-	
+
