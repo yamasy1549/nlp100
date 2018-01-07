@@ -8,4 +8,3 @@ File.open(filename) do |sentences|
     puts
   end
 end
-

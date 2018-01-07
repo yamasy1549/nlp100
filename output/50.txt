@@ -18,7 +18,7 @@ Examples are MARGIE (Schank, 1975), SAM (Cullingford, 1978), PAM (Wilensky, 1978
 During this time, many chatterbots were written including PARRY, Racter, and Jabberwacky.
 Up to the 1980s, most NLP systems were based on complex sets of hand-written rules.
 Starting in the late 1980s, however, there was a revolution in NLP with the introduction of machine learning algorithms for language processing.
-This was due to both the steady increase in computational power resulting from Moore's Law and the gradual lessening of the dominance of Chomskyan theories of linguistics (e.g.
+This was due to both the steady increase in computational power resulting from Moore's Law and the gradual lessening of the dominance of Chomskyan theories of linguistics (e.g. transformational grammar), whose theoretical underpinnings discouraged the sort of corpus linguistics that underlies the machine-learning approach to language processing.
 Some of the earliest-used machine learning algorithms, such as decision trees, produced systems of hard if-then rules similar to existing hand-written rules.
 However, Part of speech tagging introduced the use of Hidden Markov Models to NLP, and increasingly, research has focused on statistical models, which make soft, probabilistic decisions based on attaching real-valued weights to the features making up the input data.
 The cache language models upon which many speech recognition systems now rely are examples of such statistical models.
@@ -44,7 +44,7 @@ Increasingly, however, research has focused on statistical models, which make so
 Such models have the advantage that they can express the relative certainty of many different possible answers rather than only one, producing more reliable results when such a model is included as a component of a larger system.
 Systems based on machine-learning algorithms have many advantages over hand-produced rules:
 The learning procedures used during machine learning automatically focus on the most common cases, whereas when writing rules by hand it is often not obvious at all where the effort should be directed.
-Automatic learning procedures can make use of statistical inference algorithms to produce models that are robust to unfamiliar input (e.g.
+Automatic learning procedures can make use of statistical inference algorithms to produce models that are robust to unfamiliar input (e.g. containing words or structures that have not been seen before) and to erroneous input (e.g. with misspelled words or words accidentally omitted).
 Generally, handling such input gracefully with hand-written rules -- or more generally, creating systems of hand-written rules that make soft decisions -- extremely difficult, error-prone and time-consuming.
 Systems based on automatically learning the rules can be made more accurate simply by supplying more input data.
 However, systems based on hand-written rules can only be made more accurate by increasing the complexity of the rules, which is a much more difficult task.
