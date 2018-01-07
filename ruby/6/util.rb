@@ -13,3 +13,24 @@ def standard_core_nlp(filename: '../../output/nlp.txt.xml')
     end
   end
 end
+
+class REXML::Element
+  def id
+    self.attributes['id'].to_i
+  end
+
+  def word
+    self.elements['word'].text
+  end
+end
+
+class Mention
+  attr_accessor :start, :endd, :text, :representative_text
+
+  def initialize(start, endd, text, representative_text)
+    @start = start
+    @endd = endd
+    @text = text
+    @representative_text = representative_text
+  end
+end
