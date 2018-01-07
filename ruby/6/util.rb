@@ -34,3 +34,14 @@ class Mention
     @representative_text = representative_text
   end
 end
+
+class Dependant
+  attr_accessor :governor, :dependent, :governor_idx, :dependent_idx
+
+  def initialize(governor, dependent, governor_idx, dependent_idx)
+    @governor = governor
+    @dependent = dependent
+    @governor_idx = governor_idx
+    @dependent_idx = dependent_idx
+  end
+end
