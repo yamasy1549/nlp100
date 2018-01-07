@@ -1,0 +1,497 @@
+Natural language processing
+Wikipedia
+the free encyclopedia Natural language processing -LRB- NLP -RRB-
+the free encyclopedia Natural language processing
+NLP
+a field of computer science , artificial intelligence , and linguistics concerned with the interactions between computers and human -LRB- natural -RRB- languages
+a field of computer science
+a field
+computer science
+artificial intelligence
+linguistics concerned with the interactions between computers and human -LRB- natural -RRB- languages
+linguistics
+the interactions between computers and human -LRB- natural -RRB- languages
+the interactions
+computers and human -LRB- natural -RRB- languages
+computers
+human -LRB- natural -RRB- languages
+such
+NLP
+the area of humani-computer interaction
+the area
+humani-computer interaction
+Many challenges in NLP
+Many challenges
+NLP
+natural language understanding , that is ,
+natural language understanding
+computers
+meaning
+human or natural language input
+others
+natural language generation
+History The history of NLP
+History The history
+NLP
+the 1950s
+work
+earlier periods
+1950
+Alan Turing
+an article titled `` Computing Machinery and Intelligence '' which proposed what is now called the Turing test as a criterion of intelligence
+an article
+Computing Machinery and Intelligence
+the Turing test
+a criterion of intelligence
+a criterion
+intelligence
+The Georgetown experiment in 1954
+The Georgetown experiment
+1954
+fully automatic translation of more than sixty Russian sentences
+fully automatic translation
+more than sixty Russian sentences
+English
+The authors
+three or five years
+machine translation
+a solved problem
+real progress
+the ALPAC report in 1966 , which found that ten year long research had failed to fulfill the expectations
+the ALPAC report
+1966
+long research
+the expectations
+machine
+translation
+Little further research in machine translation
+Little further research
+machine translation
+the late 1980s , when the first statistical machine translation systems were developed
+the late 1980s
+the first statistical machine translation systems
+the first statistical machine
+translation systems
+Some notably successful NLP systems developed in the 1960s
+Some notably successful NLP systems
+the 1960s
+SHRDLU , a natural language system working in restricted `` blocks worlds '' with restricted vocabularies
+SHRDLU
+a natural language system working in restricted `` blocks worlds '' with restricted vocabularies
+a natural language system
+restricted `` blocks worlds ''
+restricted
+blocks worlds
+restricted vocabularies
+ELIZA , a simulation of a Rogerian psychotherapist ,
+ELIZA
+a simulation of a Rogerian psychotherapist
+a simulation
+a Rogerian psychotherapist
+Joseph Weizenbaum between 1964 to 1966
+Joseph Weizenbaum
+1964 to 1966
+almost no information
+human thought or emotion
+ELIZA
+a startlingly human-like interaction
+the `` patient ''
+the very small knowledge base
+ELIZA
+a generic response , for example , responding to `` My head hurts
+a generic response
+example
+My head
+you
+your head
+.
+the 1970s
+many programmers
+conceptual ontologies ' , which structured real-world information into computer-understandable data
+conceptual ontologies '
+conceptual
+ontologies '
+real-world information
+computer-understandable data
+Examples
+MARGIE -LRB- Schank , 1975 -RRB- , SAM -LRB- Cullingford , 1978 -RRB- , PAM -LRB- Wilensky , 1978 -RRB- , TaleSpin -LRB- Meehan , 1976 -RRB- , QUALM -LRB- Lehnert , 1977 -RRB- , Politics -LRB- Carbonell , 1979 -RRB- , and Plot Units -LRB- Lehnert 1981 -RRB-
+MARGIE -LRB- Schank , 1975 -RRB-
+MARGIE
+Schank
+1975
+SAM -LRB- Cullingford , 1978 -RRB- , PAM -LRB- Wilensky , 1978 -RRB- , TaleSpin -LRB- Meehan , 1976 -RRB- , QUALM -LRB- Lehnert , 1977 -RRB- , Politics -LRB- Carbonell , 1979 -RRB- , and Plot Units -LRB- Lehnert 1981 -RRB-
+SAM -LRB- Cullingford , 1978 -RRB-
+SAM
+Cullingford
+1978
+PAM -LRB- Wilensky , 1978 -RRB-
+PAM
+Wilensky
+1978
+TaleSpin -LRB- Meehan , 1976 -RRB-
+TaleSpin
+Meehan
+1976
+QUALM -LRB- Lehnert , 1977 -RRB-
+QUALM
+Lehnert
+1977
+Politics -LRB- Carbonell , 1979 -RRB-
+Politics
+Carbonell
+1979
+Plot Units -LRB- Lehnert 1981 -RRB-
+Plot Units
+Lehnert 1981
+this time
+many chatterbots
+PARRY , Racter , and Jabberwacky
+the 1980s
+most NLP systems
+complex sets of hand-written rules
+complex sets
+hand-written rules
+the late 1980s
+there
+a revolution in NLP
+a revolution
+NLP
+the introduction of machine learning algorithms for language processing
+the introduction
+machine learning algorithms for language processing
+machine learning algorithms
+language processing
+This
+both the steady increase
+computational power resulting from Moore 's Law and the gradual lessening of the dominance of Chomskyan theories of linguistics -LRB- e.g. transformational grammar -RRB- , whose theoretical underpinnings discouraged the sort of corpus linguistics that underlies the machine-learning approach to language processing
+computational power
+Moore 's Law and the gradual lessening of the dominance of Chomskyan theories of linguistics -LRB- e.g. transformational grammar -RRB- , whose theoretical underpinnings discouraged the sort of corpus linguistics that underlies the machine-learning approach to language processing
+Moore 's Law
+Moore 's
+the gradual lessening of the dominance of Chomskyan theories of linguistics -LRB- e.g. transformational grammar -RRB- , whose theoretical underpinnings discouraged the sort of corpus linguistics that underlies the machine-learning approach to language processing
+the gradual lessening
+the dominance of Chomskyan theories
+the dominance
+Chomskyan theories
+linguistics -LRB- e.g. transformational grammar -RRB-
+linguistics
+e.g. transformational grammar
+e.g.
+transformational grammar
+theoretical underpinnings
+the sort of corpus linguistics that underlies the machine-learning approach to language processing
+the sort
+corpus linguistics
+the machine-learning approach
+language processing
+Some of the earliest-used machine learning algorithms , such as decision trees ,
+Some
+the earliest-used machine learning algorithms , such as decision trees ,
+the earliest-used machine
+algorithms , such as decision trees ,
+algorithms
+decision trees
+systems of hard if-then rules similar to existing hand-written rules
+systems
+hard if-then rules similar to existing hand-written rules
+hard if-then rules
+existing hand-written rules
+Part of speech
+Part
+speech
+the use of Hidden Markov Models
+the use
+Hidden Markov Models
+NLP
+research
+statistical models , which make soft , probabilistic decisions based on attaching real-valued weights to the features making up the input data
+statistical models
+soft , probabilistic decisions
+real-valued weights
+the features making up the input data
+the features
+the input data
+The cache language models upon which many speech recognition systems now rely
+The cache language models
+many speech recognition systems
+examples of such statistical models
+examples
+such statistical models
+Such models
+unfamiliar input , especially input that contains errors -LRB- as is very common for real-world data -RRB- ,
+unfamiliar input
+input that contains errors -LRB- as is very common for real-world data -RRB-
+input
+errors -LRB- as is very common for real-world data -RRB-
+errors
+real-world data
+more reliable results
+a larger system comprising multiple subtasks
+a larger system
+multiple subtasks
+Many of the notable early successes
+Many
+the notable early successes
+the field of machine translation , due especially to work at IBM Research , where successively more complicated statistical models were developed
+the field
+machine translation , due especially to work at IBM Research , where successively more complicated statistical models were developed
+machine translation
+IBM Research
+more complicated statistical models
+These systems
+advantage of existing multilingual textual corpora that had been produced by the Parliament of Canada and the European Union as a result of laws calling for the translation of all governmental proceedings into all official languages of the corresponding systems of government
+advantage
+existing multilingual textual corpora that had been produced by the Parliament of Canada and the European Union as a result of laws calling for the translation of all governmental proceedings into all official languages of the corresponding systems of government
+existing multilingual textual corpora
+the Parliament of Canada and the European Union
+the Parliament
+Canada and the European Union
+Canada
+the European Union
+a result of laws calling for the translation of all governmental proceedings into all official languages of the corresponding systems of government
+a result
+laws calling for the translation of all governmental proceedings into all official languages of the corresponding systems of government
+laws
+the translation of all governmental proceedings
+the translation
+all governmental proceedings
+all official languages of the corresponding systems of government
+all official languages
+the corresponding systems of government
+the corresponding systems
+government
+most other systems
+corpora
+the tasks implemented by these systems , which was -LRB- and often continues to be -RRB-
+the tasks
+these systems , which was -LRB- and often continues to be -RRB-
+these systems
+a major limitation in the success of these systems
+a major limitation
+the success of these systems
+the success
+these systems
+a result
+a great deal of research
+a great deal
+research
+methods of more effectively learning from limited amounts of data
+methods
+more effectively learning from limited amounts of data
+more
+limited amounts of data
+limited amounts
+data
+Recent research
+unsupervised and semi-supervised learning algorithms
+Such algorithms
+data that has not been hand-annotated with the desired answers
+data
+the desired answers
+a combination of annotated and non-annotated data
+a combination
+annotated and non-annotated data
+this task
+supervised learning
+less accurate results for a given amount of input data
+less accurate results
+a given amount of input data
+a given amount
+input data
+there
+an enormous amount of non-annotated data available -LRB- including , among other things , the entire content of the World Wide Web -RRB- , which can often make up for the inferior results
+an enormous amount of non-annotated data available
+an enormous amount
+non-annotated data available
+non-annotated data
+other things
+the entire content of the World Wide Web
+the entire content
+the World Wide Web
+the inferior results
+NLP using machine learning Modern NLP algorithms
+NLP
+machine learning Modern NLP algorithms
+machine learning , especially statistical machine learning
+machine learning
+statistical machine learning
+The paradigm of machine learning
+The paradigm
+machine learning
+that of most prior attempts
+that
+most prior attempts
+language processing
+implementations of language-processing tasks
+implementations
+language-processing tasks
+the direct hand coding of large sets of rules
+the direct hand coding
+large sets of rules
+large sets
+rules
+The machine-learning paradigm
+general learning algorithms - often
+general learning algorithms
+statistical inference
+such rules
+the analysis of large corpora of typical real-world examples
+the analysis
+large corpora of typical real-world examples
+large corpora
+typical real-world examples
+A corpus -LRB- plural , `` corpora '' -RRB-
+A corpus
+plural , `` corpora ''
+plural
+`` corpora ''
+a set of documents -LRB- or sometimes , individual sentences -RRB- that have been hand-annotated with the correct values to be learned
+a set
+documents -LRB- or sometimes , individual sentences -RRB- that have been hand-annotated with the correct values to be learned
+documents
+individual sentences
+the correct values
+Many different classes of machine learning algorithms
+Many different classes
+machine learning algorithms
+NLP tasks
+These algorithms
+as input
+a large set of `` features '' that are generated from the input data
+a large set
+`` features '' that are generated from the input data
+`` features ''
+the input data
+Some of the earliest-used algorithms , such as decision trees ,
+Some
+the earliest-used algorithms
+decision trees
+systems of hard if-then rules similar to the systems of hand-written rules that were then common
+systems
+hard if-then rules similar to the systems of hand-written rules that were then common
+hard if-then rules
+the systems of hand-written rules that were then common
+the systems
+hand-written rules
+research
+statistical models , which make soft , probabilistic decisions based on attaching real-valued weights to each input feature
+statistical models
+soft , probabilistic decisions
+real-valued weights
+each input feature
+Such models
+the advantage
+they
+the relative certainty of many different possible answers rather than only one
+the relative certainty
+many different possible answers rather than only one
+many different possible answers
+only one
+more reliable results
+such a model
+a component of a larger system
+a component
+a larger system
+Systems based on machine-learning algorithms
+Systems
+machine-learning algorithms
+many advantages over hand-produced rules
+many advantages
+hand-produced rules
+The learning procedures used during machine learning
+The learning procedures
+machine learning
+the most common cases , whereas when writing rules by hand it is often not obvious at all where the effort should be directed
+the most common cases
+rules
+hand
+it
+all
+the effort
+Automatic learning procedures
+Automatic
+procedures
+use of statistical inference algorithms
+use
+statistical inference algorithms
+models that are robust to unfamiliar input -LRB- e.g. containing words or structures that have not been seen before -RRB- and to erroneous input -LRB- e.g. with misspelled words or words accidentally omitted -RRB-
+models
+unfamiliar input
+words or structures that have not been seen before
+words or structures
+erroneous input -LRB- e.g. with misspelled words or words accidentally omitted -RRB-
+e.g. with misspelled words or words accidentally omitted
+e.g.
+words or words accidentally omitted
+words or words
+such input gracefully with hand-written rules -- or more
+such input
+hand-written rules
+systems of hand-written rules that make soft decisions -- extremely difficult , error-prone and time-consuming
+systems
+hand-written rules
+soft decisions -- extremely difficult , error-prone and time-consuming
+soft decisions
+Systems based on automatically learning the rules
+Systems
+the rules
+more input data
+systems based on hand-written rules
+systems
+hand-written rules
+the complexity of the rules , which is a much more difficult task
+the complexity
+the rules , which is a much more difficult task
+the rules
+a much more difficult task
+there
+a limit to the complexity of systems based on hand-crafted rules , beyond which the systems become more and more unmanageable
+a limit
+the complexity of systems based on hand-crafted rules , beyond which the systems become more and more unmanageable
+the complexity
+systems based on hand-crafted rules , beyond which the systems become more and more unmanageable
+systems
+hand-crafted rules , beyond which the systems become more and more unmanageable
+hand-crafted rules
+the systems
+more data
+input
+machine-learning systems
+a corresponding increase in the number of man-hours
+a corresponding increase
+the number of man-hours
+the number
+man-hours
+significant increases in the complexity of the annotation process
+significant increases
+the complexity of the annotation process
+the complexity
+the annotation process
+The subfield of NLP devoted to learning approaches is known as Natural Language Learning -LRB- NLL -RRB- and its conference CoNLL and peak body SIGNLL
+The subfield
+NLP devoted to learning approaches is known as Natural Language Learning -LRB- NLL -RRB- and its conference CoNLL and peak body SIGNLL
+NLP
+approaches
+Natural Language Learning -LRB- NLL -RRB-
+Natural Language Learning
+NLL
+its conference CoNLL and peak body
+SIGNLL
+ACL
+their links
+Computational Linguistics and Language Acquisition
+Computational Linguistics
+Language Acquisition
+the aims of computational language learning research
+the aims
+computational language learning research
+computational language
+research
+more
+human language acquisition , or psycholinguistics
+human language acquisition
+psycholinguistics
+NLL
+the related field of Computational Psycholinguistics
+the related field
+Computational Psycholinguistics
