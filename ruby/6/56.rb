@@ -22,23 +22,26 @@ doc.elements.each('root/document/coreference/coreference') do |coreference|
 end
 
 endds = []
+outputs = []
 
 standard_core_nlp do |sentence, token|
   mentions = sentence_mentions[sentence.id]
                &.select { |mention| mention.start == token.id }
                &.sort_by { |mention| -mention.endd }
 
-  mentions.present? && mentions.each do |mention|
+  output = ''
+
+  mentions&.each do |mention|
     endds << mention.endd
-    print "[#{mention.representative_text}("
+    output += "[#{mention.representative_text}("
   end
 
-  print token.word
+  output += token.word
 
-  if endds.include?(token.id)
-    endds.delete(token.id)
-    print ')]'
-  end
+  endds.count(token.id).times { output += ')]' }
+  endds.delete(token.id)
 
-  print ' '
+  outputs << output
 end
+
+puts outputs.join(' ')
