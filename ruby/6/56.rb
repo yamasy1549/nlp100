@@ -4,10 +4,7 @@ require 'rexml/document'
 # 文ごとの参照表現
 sentence_mentions = []
 
-filename = '../../output/nlp.txt.xml'
-doc = REXML::Document.new(File.new(filename))
-
-doc.elements.each('root/document/coreference/coreference') do |coreference|
+xml_elements.each('root/document/coreference/coreference') do |coreference|
   representative = coreference.elements['mention[@representative="true"]']
   representative_text = representative.elements['text'].text
 

@@ -1,11 +1,8 @@
 require 'gviz'
 require './util'
 
-filename = '../../output/nlp.txt.xml'
-doc = REXML::Document.new(File.new(filename))
-
 # 1文目
-sentence = doc.elements['root/document/sentences/sentence']
+sentence = xml_elements['root/document/sentences/sentence']
 
 Graph do
   sentence.elements.each('dependencies[@type="collapsed-dependencies"]/dep') do |dep|

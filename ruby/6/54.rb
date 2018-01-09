@@ -1,6 +1,6 @@
 require './util'
 
-standard_core_nlp do |_, token|
+sentence_tokens do |_, token|
   puts [
     token.elements['word'].text,
     token.elements['lemma'].text,

@@ -1,9 +1,6 @@
 require './util'
 
-filename = '../../output/nlp.txt.xml'
-doc = REXML::Document.new(File.new(filename))
-
-doc.elements.each('root/document/sentences/sentence') do |sentence|
+xml_elements.each('root/document/sentences/sentence') do |sentence|
   nsubj_list = []
   dobj_list = []
 

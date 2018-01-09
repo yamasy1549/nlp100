@@ -1,11 +1,5 @@
 require './util'
 
-class Object
-  def is_pair?
-    self.is_a?(Array) && self.first.is_a?(String) && self.last.is_a?(String)
-  end
-end
-
 def parse(s_expr)
   read(tokenize(s_expr))
 end
@@ -41,10 +35,7 @@ def evaluate(expr, pos: 'NP')
   expr[1..-1].each { |e| evaluate(e) } unless expr.is_pair?
 end
 
-filename = '../../output/nlp.txt.xml'
-doc = REXML::Document.new(File.new(filename))
-
-doc.elements.each('root/document/sentences/sentence/parse') do |parse|
+xml_elements.each('root/document/sentences/sentence/parse') do |parse|
   parsed = parse(parse.text)
   evaluate(parsed)
 end
