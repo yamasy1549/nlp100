@@ -1,0 +1,10 @@
+1	Madonna
+2	Björk
+3	The Prodigy
+4	Rihanna
+5	Britney Spears
+6	Maroon 5
+7	Adam Lambert
+8	Fatboy Slim
+9	Basement Jaxx
+10	Cornershop
