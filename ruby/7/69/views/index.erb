@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset='urf-8'>
+    <link rel='stylesheet' href='/style.css'>
+    <title>Artists</title>
+  </head>
+  <body>
+    <div class='sidebar'>
+      <form action='/'>
+        <p>
+          <label for='name'>name</label>
+          <input name='name'>
+        </p>
+        <p>
+          <label for='area'>area</label>
+          <input name='area'>
+        </p>
+        <p>
+          <label for='tags'>tags</label>
+          <input name='tags'>
+        </p>
+        <input type='submit' value='Search'>
+      </form>
+    </div>
+    <main>
+      <ul class='artist-list'>
+        <% @artists.each do |artist| %>
+          <li class='artist'>
+            <header class='artist-header'>
+              <h2 class='name'><%= artist['name'] %></h2>
+              <% if artist['aliases'] %>
+                <small class='alias'><%= artist['aliases'].map { |n| n['name'] }.join(' / ') %></small>
+              <% end %>
+              <% if artist['area'] %>
+                <small class='area'><span class='hyphen'>-</span><%= artist['area'] %></small>
+              <% end %>
+            </header>
+
+            <% if artist['begin'] || artist['end'] %>
+              <div class='activity'><%= time(artist['begin']) %>-<%= time(artist['end']) %></div>
+            <% end %>
+            <% if artist['rating'] %>
+              <div class='rating'>★ <%= artist['rating']['value'] %></div>
+            <% end %>
+
+            <% if artist['tags'] %>
+              <ul class='tags'>
+                <% artist['tags'].each do |tag| %>
+                  <li class='tag'>
+                    <a href=<%= "/?tags=#{tag['value']}" %>>
+                      <span class='tag-value'><%= tag['value'] %></span>
+                      <span class='tag-count'><%= tag['count'] %></span>
+                    </a>
+                  </li>
+                <% end %>
+              </ul>
+            <% end %>
+            <div class='id'>#<%= artist['id'] %></div>
+          </li>
+        <% end %>
+      </ul>
+    </main>
+  </body>
+</html>
