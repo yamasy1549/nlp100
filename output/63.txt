@@ -1,3 +1,14 @@
 No.1
-	fixme label mess	1
-	likedis auto	1
+	morning glory	1
+	oasis	1
+No.2
+	No tag
+No.3
+	rock	1
+	britpop	3
+	british	4
+	uk	1
+	britannique	1
+	rock and indie	1
+	england	1
+	manchester	1

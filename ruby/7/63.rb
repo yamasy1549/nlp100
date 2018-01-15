@@ -8,9 +8,13 @@ unless redis.keys.present?
   end
 end
 
-redis.search('エレファントカシマシ').each.with_index(1) do |tags, i|
+redis.search('Oasis').each.with_index(1) do |tags, i|
   puts "No.#{i}"
-  JSON.parse(tags).each do |tag|
-    puts "\t#{tag['value']}\t#{tag['count']}"
+  if tags = JSON.parse(tags)
+    tags.each do |tag|
+      puts "\t#{tag['value']}\t#{tag['count']}"
+    end
+  else
+    puts "\tNo tag"
   end
 end
