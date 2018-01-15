@@ -7,56 +7,66 @@
   </head>
   <body>
     <div class='sidebar'>
-      <form action='/'>
-        <p>
-          <label for='name'>name</label>
-          <input name='name'>
+      <form action='/' class='search-form'>
+        <p class='form-item'>
+          <label for='name' class='form-label'>name</label>
+          <input name='name' class='form-input' value='<%= params['name'] %>'>
         </p>
-        <p>
-          <label for='area'>area</label>
-          <input name='area'>
+        <p class='form-item'>
+          <label for='area' class='form-label'>area</label>
+          <input name='area' class='form-input' value='<%= params['area'] %>'>
         </p>
-        <p>
-          <label for='tags'>tags</label>
-          <input name='tags'>
+        <p class='form-item'>
+          <label for='tags' class='form-label'>tags</label>
+          <input name='tags' class='form-input' value='<%= params['tags'] %>'>
         </p>
-        <input type='submit' value='Search'>
+        <p class='form-item'>
+          <label for='limit' class='form-label'>limit</label>
+          <input name='limit' class='form-input' value='<%= params['limit'] %>' type='number'>
+        </p>
+        <input type='submit' value='Search' class='form-search'>
       </form>
     </div>
     <main>
+      <h1 class='result-count'><%= display_count(@artists.count) %></h1>
       <ul class='artist-list'>
         <% @artists.each do |artist| %>
           <li class='artist'>
-            <header class='artist-header'>
-              <h2 class='name'><%= artist['name'] %></h2>
-              <% if artist['aliases'] %>
-                <small class='alias'><%= artist['aliases'].map { |n| n['name'] }.join(' / ') %></small>
-              <% end %>
-              <% if artist['area'] %>
-                <small class='area'><span class='hyphen'>-</span><%= artist['area'] %></small>
-              <% end %>
-            </header>
-
-            <% if artist['begin'] || artist['end'] %>
-              <div class='activity'><%= time(artist['begin']) %>-<%= time(artist['end']) %></div>
-            <% end %>
-            <% if artist['rating'] %>
-              <div class='rating'>★ <%= artist['rating']['value'] %></div>
-            <% end %>
-
-            <% if artist['tags'] %>
-              <ul class='tags'>
-                <% artist['tags'].each do |tag| %>
-                  <li class='tag'>
-                    <a href=<%= "/?tags=#{tag['value']}" %>>
-                      <span class='tag-value'><%= tag['value'] %></span>
-                      <span class='tag-count'><%= tag['count'] %></span>
-                    </a>
-                  </li>
+            <div class='left'>
+              <img src=<%= artist['image'] %> alt=<%= "#{artist['name']}の画像" %> class='cover'>
+            </div>
+            <div class='right'>
+              <header class='artist-header'>
+                <h2 class='name'><%= artist['name'] %></h2>
+                <% if artist['aliases'] %>
+                  <small class='alias'><%= artist['aliases'].map { |n| n['name'] }.join(' / ') %></small>
                 <% end %>
-              </ul>
-            <% end %>
-            <div class='id'>#<%= artist['id'] %></div>
+                <% if artist['area'] %>
+                  <small class='area'><span class='hyphen'>-</span><%= artist['area'] %></small>
+                <% end %>
+              </header>
+
+              <% if artist['begin'] || artist['end'] %>
+                <div class='activity'><%= time(artist['begin']) %>-<%= time(artist['end']) %></div>
+              <% end %>
+              <% if artist['rating'] %>
+                <div class='rating'>★ <%= artist['rating']['value'] %></div>
+              <% end %>
+
+              <% if artist['tags'] %>
+                <ul class='tags'>
+                  <% artist['tags'].each do |tag| %>
+                    <li class='tag'>
+                      <a href=<%= "/?tags=#{tag['value']}" %>>
+                        <span class='tag-value'><%= tag['value'] %></span>
+                        <span class='tag-count'><%= tag['count'] %></span>
+                      </a>
+                    </li>
+                  <% end %>
+                </ul>
+              <% end %>
+              <div class='id'>#<%= artist['id'] %></div>
+            </div>
           </li>
         <% end %>
       </ul>
