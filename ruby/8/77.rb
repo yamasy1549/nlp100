@@ -4,8 +4,7 @@ accuracy_list = []
 precision_list = []
 recall_list = []
 
-filename = '../../output/76.txt'
-File.open(filename) do |lines|
+File.open('../../output/76.txt') do |lines|
   lines.each do |line|
     label, prob_label, _ = line.chomp.split("\t")
     # 予測の正答率

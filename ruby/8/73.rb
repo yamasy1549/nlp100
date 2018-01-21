@@ -1,8 +1,7 @@
 require './util'
 require './train'
 
-x_train, x_test, y_train, y_test = train_test_data(test_size: 0)
+x_train, _, y_train, _ = train_test_data
 model = logreg(x_train, y_train)
 
-puts "train: #{model.score(x_train, y_train)}"
-puts "test: #{model.score(x_test, y_test)}"
+puts "accuracy(train)\t#{model.score(x_train, y_train)}"

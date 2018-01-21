@@ -2,10 +2,6 @@ require 'pry'
 require 'open-uri'
 require 'lingua/stemmer'
 require 'ruby-progressbar'
-require 'pycall/import'
-include PyCall::Import
-
-`export PYTHONPATH=/usr/local/lib/python2.7/site-packages`
 
 STEMMER = Lingua::Stemmer.new(language: 'en')
 
@@ -16,22 +12,36 @@ class String
   def stopword?(stopwords: STOPWORDS)
     stopwords.include?(self.downcase)
   end
+
+  def word_freqs
+    word_groups = self.split.group_by do |word|
+      STEMMER.stem(word) unless word.stopword? || word.match?(/[[:^alpha:]]/)
+    end
+    word_groups.map{ |key, words| [key, words.count] }.to_h.reject{ |key, _| key.nil? }
+  end
 end
 
-def word_freqs(filename: '../../data/sentiment.txt')
+def word_freqs(filename: '../../data/sentiment.txt', sentences: nil)
   freqs = []
-  progressbar = ProgressBar.create(title: 'Freqs', total: `wc -l #{filename}`.to_i)
-  File.open(filename) do |file|
-    file.each_slice(1000) do |chunk|
-      freqs += chunk.map do |line|
-        progressbar.increment
-        word_groups = line.scrub('?').chomp[3...-1].split.group_by do |word|
-          STEMMER.stem(word) unless word.stopword? || word.match?(/[[:^alpha:]]/)
+
+  if sentences
+    progressbar = ProgressBar.create(title: 'Freqs', total: sentences.count)
+    freqs = sentences.map do |sentence|
+      progressbar.increment
+      sentence.word_freqs
+    end
+  else
+    progressbar = ProgressBar.create(title: 'Freqs', total: `wc -l #{filename}`.to_i)
+    File.open(filename) do |file|
+      file.each_slice(1000) do |chunk|
+        freqs += chunk.map do |line|
+          progressbar.increment
+          line.scrub('?').chomp[3...-1].word_freqs
         end
-        word_groups.map{ |key, words| [key, words.count] }.to_h.reject{ |key, _| key.nil? }
       end
     end
   end
+
   progressbar.finish
   freqs
 end
@@ -54,43 +64,11 @@ def bag_of_words(at_least: 3)
     progressbar = ProgressBar.create(title: 'Bows', total: freqs.count)
     bows = freqs.map do |freq|
       progressbar.increment
-      bow.merge(freq){ |_, v0, v1| v0 + v1 }.values
+      useful_freq = freq.select { |key, _| bow[key] }
+      bow.merge(useful_freq){ |key, v0, v1| v0 + v1 }.values
     end
     progressbar.finish
 
     return words, bows
   end
-end
-
-def train_test_data(test_size: 0.1)
-  pyfrom 'sklearn.model_selection', import: :train_test_split
-
-  labels = []
-  labels_file = '../../data/sentiment.txt'
-  File.open(labels_file) do |file|
-    labels = file.each_line.map { |line| line[0..1] }
-  end
-
-  _, bows = bag_of_words
-
-  return train_test_split(
-    bows,
-    labels,
-    test_size: test_size
-  )
-end
-
-def logreg(x_train, y_train)
-  pyfrom 'sklearn.externals', import: :joblib
-  filename = 'model.pkl'
-
-  if File.exist?(filename)
-    model = joblib.load(filename)
-  else
-    pyfrom 'sklearn.linear_model', import: :LogisticRegression
-    model = LogisticRegression.()
-    model.fit(x_train, y_train)
-    joblib.dump(model, filename, compress=9)
-  end
-  model
 end
