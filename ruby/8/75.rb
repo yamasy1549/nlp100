@@ -1,8 +1,14 @@
 require './util'
 require './train'
 
-x_train, _, y_train, _ = train_test_data
-model = logreg(x_train, y_train)
+model_file = 'models/73.pkl'
+if File.exist?(model_file)
+  model = joblib.load(model_file)
+else
+  x_train, _, y_train, _ = train_test_data
+  model = logreg(x_train, y_train)
+  joblib.dump(model, model_file)
+end
 
 origin_words = []
 bag_of_words do |words, _, _|

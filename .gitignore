@@ -1,4 +1,4 @@
 __pycache__
 __init__.py
 ruby/7/mongo/
-ruby/8/*.pkl
+ruby/8/models/
