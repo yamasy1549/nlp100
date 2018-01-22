@@ -1,12 +1,11 @@
 require 'pry'
-require 'open-uri'
 require 'lingua/stemmer'
 require 'ruby-progressbar'
 
 STEMMER = Lingua::Stemmer.new(language: 'en')
 
-stopword_file = 'https://raw.githubusercontent.com/Alir3z4/stop-words/0e438af98a88812ccc245cf31f93644709e70370/english.txt'
-STOPWORDS = open(stopword_file) { |file| file.read.split("\n") }
+# https://raw.githubusercontent.com/Alir3z4/stop-words/0e438af98a88812ccc245cf31f93644709e70370/english.txt
+STOPWORDS = File.open('../../data/stop-words.txt') { |file| file.read.split("\n") }
 
 class String
   def stopword?(stopwords: STOPWORDS)
