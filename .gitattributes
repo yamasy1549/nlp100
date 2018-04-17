@@ -1,2 +1,0 @@
-data/sentiment_bows.txt filter=lfs diff=lfs merge=lfs -text
-output/72.txt filter=lfs diff=lfs merge=lfs -text
