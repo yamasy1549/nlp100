@@ -4,3 +4,11 @@ ruby/7/mongo/
 ruby/8/models/
 ruby/9/*.dump
 ruby/9/*.mat
+
+# 重いので
+data/enwiki-20150112-400*
+
+# 分割してgit管理している
+output/81.txt
+output/82.txt
+output/83-tc.txt
