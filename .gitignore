@@ -2,3 +2,5 @@ __pycache__
 __init__.py
 ruby/7/mongo/
 ruby/8/models/
+ruby/9/*.dump
+ruby/9/*.mat
