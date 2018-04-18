@@ -1,3 +1,4 @@
+from util import *
 import pickle
 from sklearn.cluster import KMeans
 

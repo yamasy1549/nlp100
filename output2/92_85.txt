@@ -1,0 +1,506 @@
+boy girl brother sister sister 0.6344990319344233
+boy girl brothers sisters sisters 0.6933188734766867
+boy girl dad mom boyfriend 0.4882913310315571
+boy girl father mother mother 0.7208974579603706
+boy girl grandfather grandmother aunt 0.6352045329175091
+boy girl grandpa grandma -1
+boy girl grandson granddaughter granddaughter 0.588817621773628
+boy girl groom bride woman 0.42960142260875456
+boy girl he she she 0.7497817825857807
+boy girl his her her 0.6353094151713198
+boy girl husband wife boyfriend 0.5360188379890426
+boy girl king queen prince 0.6867061799972821
+boy girl man woman woman 0.6924150971541568
+boy girl nephew niece granddaughter 0.6140061221228538
+boy girl policeman policewoman woman 0.4668446730437344
+boy girl prince princess princess 0.5773274637105836
+boy girl son daughter daughter 0.7449212536397786
+boy girl sons daughters daughters 0.7970598750558856
+boy girl stepbrother stepsister -1
+boy girl stepfather stepmother boyfriend 0.46197932798792524
+boy girl stepson stepdaughter Playmate 0.3923988188078935
+boy girl uncle aunt aunt 0.6801670978769165
+brother sister brothers sisters sisters 0.657987239141939
+brother sister dad mom simulcast 0.37196291164197964
+brother sister father mother mother 0.688541383289344
+brother sister grandfather grandmother aunt 0.5720845990783301
+brother sister grandpa grandma -1
+brother sister grandson granddaughter daughter 0.4993140199547256
+brother sister groom bride simulcast 0.34701296856782315
+brother sister he she she 0.7043194813957685
+brother sister his her her 0.5839295735146881
+brother sister husband wife aunt 0.4684526833691149
+brother sister king queen queen 0.5719360946890998
+brother sister man woman woman 0.6394989872132975
+brother sister nephew niece aunt 0.5380965914781053
+brother sister policeman policewoman couple 0.3559532268927475
+brother sister prince princess queen 0.49246743537963394
+brother sister son daughter daughter 0.7482261382036371
+brother sister sons daughters daughters 0.7852680976484597
+brother sister stepbrother stepsister -1
+brother sister stepfather stepmother simulcast 0.3570243557859957
+brother sister stepson stepdaughter simulcast 0.37475528614149034
+brother sister uncle aunt aunt 0.6131509079100962
+brother sister boy girl girl 0.6196798567024236
+brothers sisters dad mom mum 0.5891683983077701
+brothers sisters father mother mother 0.7644701378108758
+brothers sisters grandfather grandmother aunt 0.7002953472842389
+brothers sisters grandpa grandma -1
+brothers sisters grandson granddaughter niece 0.6646621514056845
+brothers sisters groom bride Gidget 0.4588595628466887
+brothers sisters he she she 0.7848204213133574
+brothers sisters his her her 0.649589301708049
+brothers sisters husband wife boyfriend 0.5618604194404473
+brothers sisters king queen prince 0.6878030607345308
+brothers sisters man woman woman 0.6902580177897619
+brothers sisters nephew niece niece 0.7089302252234234
+brothers sisters policeman policewoman Gidget 0.5276293036024807
+brothers sisters prince princess queen 0.655983950292724
+brothers sisters son daughter daughter 0.7530692335582999
+brothers sisters sons daughters daughters 0.8513468072293877
+brothers sisters stepbrother stepsister -1
+brothers sisters stepfather stepmother mum 0.5434447430462549
+brothers sisters stepson stepdaughter Gidget 0.3943326267744838
+brothers sisters uncle aunt aunt 0.7333754341921858
+brothers sisters boy girl girl 0.7173725266783514
+brothers sisters brother sister sister 0.6600361058393263
+dad mom father mother mother 0.7465855832078812
+dad mom grandfather grandmother uncle 0.7782265789278073
+dad mom grandpa grandma -1
+dad mom grandson granddaughter nephew 0.7501405269784882
+dad mom groom bride pardon 0.525111523173961
+dad mom he she she 0.715995522237383
+dad mom his her her 0.5517396552457643
+dad mom husband wife grandparents 0.5653284169816518
+dad mom king queen prince 0.7479072106607766
+dad mom man woman woman 0.6662369120861219
+dad mom nephew niece son-in-law 0.8049825200264814
+dad mom policeman policewoman D'Silva 0.522067588692722
+dad mom prince princess king 0.7658722672228033
+dad mom son daughter daughter 0.7418340553293041
+dad mom sons daughters daughters 0.8341646102023018
+dad mom stepbrother stepsister -1
+dad mom stepfather stepmother abandons 0.6137913750473072
+dad mom stepson stepdaughter Sankaran 0.4752319922181443
+dad mom uncle aunt father-in-law 0.8002070093676125
+dad mom boy girl girl 0.7465844080199203
+dad mom brother sister half-brother 0.6854049073690874
+dad mom brothers sisters sons 0.7722700086756948
+father mother grandfather grandmother aunt 0.656271795776539
+father mother grandpa grandma -1
+father mother grandson granddaughter consort 0.6009839903955009
+father mother groom bride baby 0.42063193252229303
+father mother he she she 0.7248043243538316
+father mother his her her 0.6265310564793082
+father mother husband wife grandmother 0.5267753958239546
+father mother king queen queen 0.6538141373605698
+father mother man woman woman 0.6936158485933206
+father mother nephew niece aunt 0.6261865182255677
+father mother policeman policewoman girl 0.4529200683696452
+father mother prince princess queen 0.6237168788119454
+father mother son daughter daughter 0.7664850752016216
+father mother sons daughters daughters 0.8239161657104034
+father mother stepbrother stepsister -1
+father mother stepfather stepmother aunt 0.43058222143803726
+father mother stepson stepdaughter Sonia's 0.35732007510031144
+father mother uncle aunt aunt 0.69018312184477
+father mother boy girl girl 0.7082491922035974
+father mother brother sister sister 0.6737219306251953
+father mother brothers sisters sisters 0.736552415941262
+father mother dad mom mum 0.4744001985296069
+grandfather grandmother grandpa grandma -1
+grandfather grandmother grandson granddaughter consort 0.6852139300470391
+grandfather grandmother groom bride Rhys 0.5378310770635354
+grandfather grandmother he she she 0.7562426150970291
+grandfather grandmother his her her 0.6320602234739707
+grandfather grandmother husband wife boyfriend 0.5747707800946043
+grandfather grandmother king queen prince 0.7191103058937062
+grandfather grandmother man woman woman 0.6738015143404589
+grandfather grandmother nephew niece mistress 0.6936800529001477
+grandfather grandmother policeman policewoman Rhys 0.5817203200491682
+grandfather grandmother prince princess princess 0.6767637767308398
+grandfather grandmother son daughter daughter 0.7472413262013515
+grandfather grandmother sons daughters daughters 0.8506854589725008
+grandfather grandmother stepbrother stepsister -1
+grandfather grandmother stepfather stepmother Rhys 0.5762235192827451
+grandfather grandmother stepson stepdaughter Rhys 0.5023017358078933
+grandfather grandmother uncle aunt mistress 0.7369649210279234
+grandfather grandmother boy girl girl 0.7299356683956413
+grandfather grandmother brother sister sister 0.6487716630757732
+grandfather grandmother brothers sisters sisters 0.7613315520052472
+grandfather grandmother dad mom Amane 0.6274793061940559
+grandfather grandmother father mother mother 0.7541515974615377
+grandpa grandma grandson granddaughter -1
+grandpa grandma groom bride -1
+grandpa grandma he she -1
+grandpa grandma his her -1
+grandpa grandma husband wife -1
+grandpa grandma king queen -1
+grandpa grandma man woman -1
+grandpa grandma nephew niece -1
+grandpa grandma policeman policewoman -1
+grandpa grandma prince princess -1
+grandpa grandma son daughter -1
+grandpa grandma sons daughters -1
+grandpa grandma stepbrother stepsister -1
+grandpa grandma stepfather stepmother -1
+grandpa grandma stepson stepdaughter -1
+grandpa grandma uncle aunt -1
+grandpa grandma boy girl -1
+grandpa grandma brother sister -1
+grandpa grandma brothers sisters -1
+grandpa grandma dad mom -1
+grandpa grandma father mother -1
+grandpa grandma grandfather grandmother -1
+grandson granddaughter groom bride Goldenfleece 0.4725013645511768
+grandson granddaughter he she she 0.7277055078144475
+grandson granddaughter his her her 0.589534079264317
+grandson granddaughter husband wife boyfriend 0.5811011197107564
+grandson granddaughter king queen prince 0.6705661911793064
+grandson granddaughter man woman woman 0.6847202717962145
+grandson granddaughter nephew niece half-brother 0.6899318296805231
+grandson granddaughter policeman policewoman Jill 0.5215245483555325
+grandson granddaughter prince princess princess 0.6411751245022821
+grandson granddaughter son daughter daughter 0.7702882903122571
+grandson granddaughter sons daughters daughters 0.8594388033936199
+grandson granddaughter stepbrother stepsister -1
+grandson granddaughter stepfather stepmother Lauren 0.5526365205750629
+grandson granddaughter stepson stepdaughter Jasmine 0.4090437701998218
+grandson granddaughter uncle aunt aunt 0.7276606667167347
+grandson granddaughter boy girl girl 0.7140283923656323
+grandson granddaughter brother sister sister 0.6519568689314515
+grandson granddaughter brothers sisters sisters 0.728259288835704
+grandson granddaughter dad mom Flav 0.5711438390431786
+grandson granddaughter father mother mother 0.7338183934988859
+grandson granddaughter grandfather grandmother great-grandfather 0.6946295924694844
+grandson granddaughter grandpa grandma -1
+groom bride he she she 0.7004304890555263
+groom bride his her her 0.5796280356364886
+groom bride husband wife grandmother 0.6546427170104632
+groom bride king queen prince 0.7737693570524062
+groom bride man woman woman 0.6966215695346601
+groom bride nephew niece uncle 0.7818945815889116
+groom bride policeman policewoman stranger 0.5758234355885927
+groom bride prince princess king 0.7413998178169753
+groom bride son daughter daughter 0.7554944610925461
+groom bride sons daughters daughters 0.8227674119928221
+groom bride stepbrother stepsister -1
+groom bride stepfather stepmother aunt 0.7005906571106005
+groom bride stepson stepdaughter spouse 0.5103390031907502
+groom bride uncle aunt grandfather 0.7921656363682731
+groom bride boy girl girl 0.728371747112005
+groom bride brother sister half-brother 0.6910442261651263
+groom bride brothers sisters sons 0.790260625552424
+groom bride dad mom grandmother 0.6538479910172912
+groom bride father mother mother 0.7701396633260111
+groom bride grandfather grandmother uncle 0.8016816939810949
+groom bride grandpa grandma -1
+groom bride grandson granddaughter nephew 0.7806163954083236
+he she his her her 0.7435770225070121
+he she husband wife boyfriend 0.5518657143774017
+he she king queen queen 0.6638086143734123
+he she man woman woman 0.6780897635106783
+he she nephew niece husband 0.625287884958624
+he she policeman policewoman boyfriend 0.4525249312374812
+he she prince princess queen 0.5977601093767558
+he she son daughter daughter 0.7156781222220454
+he she sons daughters daughters 0.7834283046774282
+he she stepbrother stepsister -1
+he she stepfather stepmother ex-husband 0.5155892742358944
+he she stepson stepdaughter Carmella 0.40733536353837774
+he she uncle aunt aunt 0.6664800921762203
+he she boy girl girl 0.6985827837324264
+he she brother sister sister 0.6796542067467517
+he she brothers sisters sisters 0.7331912752614942
+he she dad mom mum 0.5411898386451396
+he she father mother mother 0.709163783571383
+he she grandfather grandmother aunt 0.6348176365320782
+he she grandpa grandma -1
+he she grandson granddaughter sister-in-law 0.5841896228302293
+he she groom bride her 0.4686758903370717
+his her husband wife boyfriend 0.5642922935116009
+his her king queen queen 0.6628592092361358
+his her man woman girl 0.6965223207124901
+his her nephew niece aunt 0.6377036708334161
+his her policeman policewoman herself 0.572668353519469
+his her prince princess queen 0.6132978618454407
+his her son daughter daughter 0.7310305371152762
+his her sons daughters daughters 0.751483373645188
+his her stepbrother stepsister -1
+his her stepfather stepmother herself 0.5355446721225421
+his her stepson stepdaughter herself 0.5156390385410444
+his her uncle aunt aunt 0.6805772404889506
+his her boy girl girl 0.7224094473143275
+his her brother sister sister 0.677032462302001
+his her brothers sisters sisters 0.7003618793648367
+his her dad mom herself 0.5819132615242384
+his her father mother mother 0.726591388163648
+his her grandfather grandmother aunt 0.6752079168783978
+his her grandpa grandma -1
+his her grandson granddaughter aunt 0.5824834465835674
+his her groom bride herself 0.581675051986372
+his her he she she 0.8105981705525005
+husband wife king queen prince 0.5974910423896526
+husband wife man woman boy 0.5608242400606616
+husband wife nephew niece brother-in-law 0.5757544131269654
+husband wife policeman policewoman ex-wife 0.37815794187987084
+husband wife prince princess mistress 0.5044007292661177
+husband wife son daughter daughter 0.6560300931480285
+husband wife sons daughters daughters 0.7191792696824305
+husband wife stepbrother stepsister -1
+husband wife stepfather stepmother ex-wife 0.47282729449109073
+husband wife stepson stepdaughter ex-wife 0.3493963267109957
+husband wife uncle aunt mistress 0.605097515266193
+husband wife boy girl girlfriend 0.4910070709886398
+husband wife brother sister father 0.5822649373819492
+husband wife brothers sisters sons 0.6173183828333229
+husband wife dad mom ex-wife 0.4730392861333554
+husband wife father mother mother 0.6300636802073697
+husband wife grandfather grandmother great-grandfather 0.5765250904503411
+husband wife grandpa grandma -1
+husband wife grandson granddaughter nephew 0.5337876379353521
+husband wife groom bride ex-wife 0.37723699985634357
+husband wife he she Waugh 0.448954867785765
+husband wife his her Ashmole's 0.392125385865574
+king queen man woman girl 0.598814120522384
+king queen nephew niece née 0.6277944344412943
+king queen policeman policewoman Ruby 0.44077973987123054
+king queen prince princess marries 0.5112471759956501
+king queen son daughter daughter 0.7089672933545045
+king queen sons daughters daughters 0.7974709810576089
+king queen stepbrother stepsister -1
+king queen stepfather stepmother Cynthia 0.45103405234719407
+king queen stepson stepdaughter Fox's 0.4227633870955319
+king queen uncle aunt aunt 0.6484430786849039
+king queen boy girl girl 0.5739543387426479
+king queen brother sister sister 0.6346250849618962
+king queen brothers sisters sisters 0.6622500961855627
+king queen dad mom Katie 0.4599525289431485
+king queen father mother mother 0.6726437851939419
+king queen grandfather grandmother née 0.6242706798558222
+king queen grandpa grandma -1
+king queen grandson granddaughter née 0.5924443265516363
+king queen groom bride Carmella 0.43746650031676027
+king queen he she she 0.67444313867229
+king queen his her Alan's 0.5383686102443588
+king queen husband wife boyfriend 0.5461765383237409
+man woman nephew niece niece 0.6209621688586809
+man woman policeman policewoman pregnant 0.39349172414810984
+man woman prince princess queen 0.5934721306959064
+man woman son daughter daughter 0.7770511310007759
+man woman sons daughters daughters 0.7985970292420453
+man woman stepbrother stepsister -1
+man woman stepfather stepmother aunt 0.44172926379385224
+man woman stepson stepdaughter Miss 0.395761437174574
+man woman uncle aunt aunt 0.6785918910435617
+man woman boy girl girl 0.6552944780685265
+man woman brother sister sister 0.6596281373689666
+man woman brothers sisters sisters 0.6939098583566783
+man woman dad mom pregnant 0.4363149111545146
+man woman father mother mother 0.7326032701977787
+man woman grandfather grandmother aunt 0.6260268955546284
+man woman grandpa grandma -1
+man woman grandson granddaughter granddaughter 0.5956385297657845
+man woman groom bride dowry 0.41403369624307884
+man woman he she she 0.713719969574794
+man woman his her her 0.6112371168516716
+man woman husband wife wife 0.5354659584881266
+man woman king queen queen 0.6428082881042054
+nephew niece policeman policewoman rat 0.45063878879296043
+nephew niece prince princess queen 0.6294959788487011
+nephew niece son daughter daughter 0.7444011597210402
+nephew niece sons daughters daughters 0.84891727958266
+nephew niece stepbrother stepsister -1
+nephew niece stepfather stepmother Gwen 0.4252255018700765
+nephew niece stepson stepdaughter Equine 0.37649066046079227
+nephew niece uncle aunt aunt 0.6841954002439513
+nephew niece boy girl girl 0.7113358664524292
+nephew niece brother sister sister 0.6272929088279955
+nephew niece brothers sisters sisters 0.743639769747896
+nephew niece dad mom she's 0.5283875033232031
+nephew niece father mother mother 0.735409454450421
+nephew niece grandfather grandmother paternal 0.6383153632963874
+nephew niece grandpa grandma -1
+nephew niece grandson granddaughter sister-in-law 0.587025557533022
+nephew niece groom bride crab 0.452931665048702
+nephew niece he she she 0.7574347196633057
+nephew niece his her her 0.6038563751010916
+nephew niece husband wife householder 0.5027293396607267
+nephew niece king queen prince 0.668987647782075
+nephew niece man woman woman 0.6988176369151999
+policeman policewoman prince princess -1
+policeman policewoman son daughter -1
+policeman policewoman sons daughters -1
+policeman policewoman stepbrother stepsister -1
+policeman policewoman stepfather stepmother -1
+policeman policewoman stepson stepdaughter -1
+policeman policewoman uncle aunt -1
+policeman policewoman boy girl -1
+policeman policewoman brother sister -1
+policeman policewoman brothers sisters -1
+policeman policewoman dad mom -1
+policeman policewoman father mother -1
+policeman policewoman grandfather grandmother -1
+policeman policewoman grandpa grandma -1
+policeman policewoman grandson granddaughter -1
+policeman policewoman groom bride -1
+policeman policewoman he she -1
+policeman policewoman his her -1
+policeman policewoman husband wife -1
+policeman policewoman king queen -1
+policeman policewoman man woman -1
+policeman policewoman nephew niece -1
+prince princess son daughter daughter 0.7343346457006299
+prince princess sons daughters daughters 0.8229355676974104
+prince princess stepbrother stepsister -1
+prince princess stepfather stepmother Eloise 0.513841167571001
+prince princess stepson stepdaughter Squared 0.4545029254149475
+prince princess uncle aunt aunt 0.7261481768643423
+prince princess boy girl kid 0.6534886714954605
+prince princess brother sister sister 0.6426100620679677
+prince princess brothers sisters sisters 0.6831680461479029
+prince princess dad mom Eloise 0.5080230929355253
+prince princess father mother mother 0.7232801224190354
+prince princess grandfather grandmother great-grandfather 0.7122942377106048
+prince princess grandpa grandma -1
+prince princess grandson granddaughter granddaughter 0.6652357316145247
+prince princess groom bride personalized 0.45833529219186914
+prince princess he she she 0.6904243360720309
+prince princess his her her 0.5407641552745506
+prince princess husband wife boyfriend 0.5666892815295786
+prince princess king queen queen 0.6108920485115619
+prince princess man woman woman 0.6266706926632963
+prince princess nephew niece great-grandfather 0.7007500217901651
+prince princess policeman policewoman Eloise 0.47720603601303535
+son daughter sons daughters daughters 0.8309207199212237
+son daughter stepbrother stepsister -1
+son daughter stepfather stepmother Jane 0.4388261030640292
+son daughter stepson stepdaughter Jane 0.35784057914184825
+son daughter uncle aunt aunt 0.6803853074173675
+son daughter boy girl girl 0.6876054947237561
+son daughter brother sister sister 0.7075959581159902
+son daughter brothers sisters sisters 0.7200892170187989
+son daughter dad mom mum 0.48399683637976226
+son daughter father mother mother 0.7407087165123151
+son daughter grandfather grandmother aunt 0.6607965152416763
+son daughter grandpa grandma -1
+son daughter grandson granddaughter niece 0.6153396557016367
+son daughter groom bride maid 0.3930926568175654
+son daughter he she she 0.7119186720496657
+son daughter his her her 0.6225090852669753
+son daughter husband wife aunt 0.5443230469087218
+son daughter king queen queen 0.6398933867562906
+son daughter man woman woman 0.7047731605572134
+son daughter nephew niece niece 0.6306807515616326
+son daughter policeman policewoman girl 0.413600734768724
+son daughter prince princess princess 0.6139476233510566
+sons daughters stepbrother stepsister -1
+sons daughters stepfather stepmother mum 0.5563769397748055
+sons daughters stepson stepdaughter Ester 0.4284860827378929
+sons daughters uncle aunt aunt 0.6966300257013173
+sons daughters boy girl girl 0.7086026557438415
+sons daughters brother sister sister 0.6763246685070979
+sons daughters brothers sisters sisters 0.7405476205564662
+sons daughters dad mom mum 0.5786434792027422
+sons daughters father mother mother 0.7532492405454128
+sons daughters grandfather grandmother aunt 0.6740404047899627
+sons daughters grandpa grandma -1
+sons daughters grandson granddaughter niece 0.6504830024051081
+sons daughters groom bride Ester 0.47233982185098156
+sons daughters he she she 0.7431045234319891
+sons daughters his her her 0.60541474960423
+sons daughters husband wife boyfriend 0.6015471483295685
+sons daughters king queen prince 0.6758544035951157
+sons daughters man woman woman 0.6880628642322519
+sons daughters nephew niece niece 0.675963115254879
+sons daughters policeman policewoman nightclub 0.505088527998566
+sons daughters prince princess princess 0.6330201143109133
+sons daughters son daughter daughter 0.7686926556502739
+stepbrother stepsister stepfather stepmother -1
+stepbrother stepsister stepson stepdaughter -1
+stepbrother stepsister uncle aunt -1
+stepbrother stepsister boy girl -1
+stepbrother stepsister brother sister -1
+stepbrother stepsister brothers sisters -1
+stepbrother stepsister dad mom -1
+stepbrother stepsister father mother -1
+stepbrother stepsister grandfather grandmother -1
+stepbrother stepsister grandpa grandma -1
+stepbrother stepsister grandson granddaughter -1
+stepbrother stepsister groom bride -1
+stepbrother stepsister he she -1
+stepbrother stepsister his her -1
+stepbrother stepsister husband wife -1
+stepbrother stepsister king queen -1
+stepbrother stepsister man woman -1
+stepbrother stepsister nephew niece -1
+stepbrother stepsister policeman policewoman -1
+stepbrother stepsister prince princess -1
+stepbrother stepsister son daughter -1
+stepbrother stepsister sons daughters -1
+stepfather stepmother stepson stepdaughter Gare 0.4691727020307805
+stepfather stepmother uncle aunt grandfather 0.7990597851212847
+stepfather stepmother boy girl girl 0.7223888657462184
+stepfather stepmother brother sister half-brother 0.6595260276896534
+stepfather stepmother brothers sisters sons 0.7687392475693196
+stepfather stepmother dad mom mom 0.6033266512989662
+stepfather stepmother father mother mother 0.7448943402653402
+stepfather stepmother grandfather grandmother uncle 0.7617910888826098
+stepfather stepmother grandpa grandma -1
+stepfather stepmother grandson granddaughter descendant 0.7357242425773862
+stepfather stepmother groom bride bride's 0.4960584474010601
+stepfather stepmother he she she 0.6859909898331743
+stepfather stepmother his her one's 0.5612994580057571
+stepfather stepmother husband wife grandmother 0.5640595214629882
+stepfather stepmother king queen prince 0.7465014280799683
+stepfather stepmother man woman woman 0.6693632373776609
+stepfather stepmother nephew niece grandson 0.7842102346055543
+stepfather stepmother policeman policewoman fox 0.4605448505448141
+stepfather stepmother prince princess king 0.7707761839878731
+stepfather stepmother son daughter daughter 0.7339221358592344
+stepfather stepmother sons daughters daughters 0.8292963663580128
+stepfather stepmother stepbrother stepsister -1
+stepson stepdaughter uncle aunt grandfather 0.8093018784976774
+stepson stepdaughter boy girl girl 0.7502762447336363
+stepson stepdaughter brother sister half-brother 0.7027192052733461
+stepson stepdaughter brothers sisters sons 0.7750078091753145
+stepson stepdaughter dad mom mom 0.7639846413682341
+stepson stepdaughter father mother mother 0.7683036294594581
+stepson stepdaughter grandfather grandmother uncle 0.827068361818074
+stepson stepdaughter grandpa grandma -1
+stepson stepdaughter grandson granddaughter grandfather 0.7999727475726425
+stepson stepdaughter groom bride bride 0.6530623474029479
+stepson stepdaughter he she she 0.7253024677581941
+stepson stepdaughter his her her 0.5774833598126115
+stepson stepdaughter husband wife grandmother 0.6183777989074083
+stepson stepdaughter king queen prince 0.7757733065613646
+stepson stepdaughter man woman woman 0.6890746557452426
+stepson stepdaughter nephew niece half-brother 0.8308284372782522
+stepson stepdaughter policeman policewoman murderer 0.6182294823814808
+stepson stepdaughter prince princess king 0.7664475181390228
+stepson stepdaughter son daughter daughter 0.7576111583187138
+stepson stepdaughter sons daughters daughters 0.8574860305962576
+stepson stepdaughter stepbrother stepsister -1
+stepson stepdaughter stepfather stepmother aunt 0.7049190300658272
+uncle aunt boy girl girl 0.7123194935635414
+uncle aunt brother sister sister 0.6302359236553821
+uncle aunt brothers sisters sisters 0.7042215461985434
+uncle aunt dad mom Flav 0.5791618309296739
+uncle aunt father mother mother 0.7198866971661724
+uncle aunt grandfather grandmother grandparents 0.6126291139925164
+uncle aunt grandpa grandma -1
+uncle aunt grandson granddaughter granddaughter 0.5409865587927483
+uncle aunt groom bride restroom 0.3919116044370551
+uncle aunt he she she 0.7249787240621051
+uncle aunt his her her 0.5706504899094255
+uncle aunt husband wife grandparents 0.5168266209677268
+uncle aunt king queen prince 0.6610629491181346
+uncle aunt man woman woman 0.6659579664150571
+uncle aunt nephew niece son-in-law 0.6214239574034648
+uncle aunt policeman policewoman Poo 0.38992227581614813
+uncle aunt prince princess princess 0.6041376462406205
+uncle aunt son daughter daughter 0.7214674556020839
+uncle aunt sons daughters daughters 0.8051252033735298
+uncle aunt stepbrother stepsister -1
+uncle aunt stepfather stepmother Flav 0.43975120813802404
+uncle aunt stepson stepdaughter Guides 0.4043683831525863

@@ -4,7 +4,7 @@ import pickle
 # nation
 nations = {}
 
-with open('../../data/nations.txt') as f:
+with open('../../data/nations2.txt') as f:
     for line in f:
         nation = line.strip().replace(" ", "_")
         try:

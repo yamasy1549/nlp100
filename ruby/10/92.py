@@ -1,6 +1,6 @@
 from util import *
 
-with open('../../output/92_85.txt', 'w') as output_f:
+with open('../../output2/92_85.txt', 'w') as output_f:
     with open('../../output/91.txt') as f:
         for line in f:
             words = line.strip()

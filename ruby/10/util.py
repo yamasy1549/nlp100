@@ -15,7 +15,7 @@ if arg == '85':
             model[word] = np.array([float(i) for i in vectors[j]])
             j += 1
 elif arg == '90':
-    with open('../../output/90.txt') as f:
+    with open('../../output2/90.txt') as f:
         for line in f:
             split_line = line.strip().split()
             word, vector = "".join(split_line[:-300]), split_line[-300:]

@@ -43,17 +43,12 @@ module Word2Vec
   end
 
   def most_similar(base_vec, base_words, count)
-    max = -1
     word_sims = {}
 
     @@model.each do |word, vector|
       next if base_words.include?(word)
       word_vec = vec(word)
-      sim = cossim(base_vec, word_vec)
-      if count == 1 && max < sim
-        max = sim
-        word_sims[word] = sim
-      end
+      word_sims[word] = cossim(base_vec, word_vec)
     end
 
     word_sims.sort_by_value.take(count)
