@@ -4,7 +4,6 @@ require 'active_record'
 require 'mongo'
 require 'open-uri'
 require 'nokogiri'
-require 'pry'
 
 helpers do
   def time(hash)

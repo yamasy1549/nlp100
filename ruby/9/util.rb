@@ -1,4 +1,3 @@
-require 'pry'
 require 'ruby-progressbar'
 require 'active_support'
 require 'active_support/core_ext'

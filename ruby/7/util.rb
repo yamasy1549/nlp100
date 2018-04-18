@@ -1,4 +1,3 @@
-require 'pry'
 require 'zlib'
 require 'json'
 require 'redis'

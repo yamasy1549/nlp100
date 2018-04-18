@@ -1,4 +1,3 @@
-require 'pry'
 require 'active_record'
 require 'rexml/document'
 

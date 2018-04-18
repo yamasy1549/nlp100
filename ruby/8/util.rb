@@ -1,4 +1,3 @@
-require 'pry'
 require 'lingua/stemmer'
 require 'ruby-progressbar'
 

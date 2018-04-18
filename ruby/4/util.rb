@@ -1,5 +1,3 @@
-require 'pry'
-
 def morphologies(filename='../../data/neko.txt.mecab')
   sentence_list = []
 
