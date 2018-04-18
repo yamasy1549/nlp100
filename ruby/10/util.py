@@ -1,4 +1,5 @@
 import sys
+import pickle
 import numpy as np
 from scipy import io
 
@@ -40,3 +41,22 @@ def most_similar(base_vec, base_words, count):
         word_sims[word] = cossim(base_vec, word_vec)
 
     return sorted(word_sims.items(), key=lambda x:-x[1])[:count]
+
+def fetch_nations():
+    with open('96.pickle', 'rb') as f:
+        nations = pickle.load(f)
+    return nations
+
+def fetch_vectors():
+    x_svd = io.loadmat("../9/85.mat")['x_svd']
+
+    nations = fetch_nations
+
+    with open('96-t_index.pickle', 'rb') as f:
+        t_index = pickle.load(f)
+
+    vectors = []
+    for i in t_index:
+        vectors.append(x_svd[i])
+
+    return vectors

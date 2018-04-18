@@ -2,8 +2,9 @@ __pycache__
 __init__.py
 ruby/7/mongo/
 ruby/8/models/
-ruby/**/*.dump
-ruby/**/*.mat
+**/*.dump
+**/*.mat
+**/*.pickle
 
 # 重いので
 data/enwiki-20150112-400*
