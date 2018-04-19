@@ -1,3 +1,4 @@
+require 'pry'
 require 'active_record'
 
 class Morph
@@ -66,15 +67,15 @@ end
 def dependencies(filename: '../../data/neko.txt.cabocha')
   sentence_list = []
 
-  File.open(filename, 'r') do |lines|
+  File.open(filename) do |lines|
     sentence = []
     chunk = Chunk.new
 
     lines.each do |line|
       # 文節のはじめ
-      line.scan(/\*\s\d+\s(?<dst>-?\d+)D/) do |dst|
+      line.scan(/\*\s\d+\s(?<dst>-?\d+)D/) do |(dst)|
         sentence << chunk if chunk.morphs.present?
-        chunk = Chunk.new(dst: dst[0].to_i)
+        chunk = Chunk.new(dst: dst.to_i)
       end
 
       # 形態素
