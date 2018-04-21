@@ -9,8 +9,10 @@ File.open(filename) do |lines|
       sentences.each do |sentence|
         puts sentence.rstrip
       end
-    elsif line.match(/^\n+$/).nil?
-      puts line.chomp
+    else
+      line.scan(/^(.+?)\n$/) do |chars|
+        puts chars
+      end
     end
   end
 end
