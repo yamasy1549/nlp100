@@ -8,7 +8,7 @@ def xml_elements(filename: '../../output/nlp.txt.xml')
   doc.elements
 end
 
-def sentence_tokens(filename: '../../output/nlp.txt.xml')
+def sentence_tokens
   xml_elements.each('root/document/sentences/sentence') do |sentence|
     sentence.elements.each('tokens/token') do |token|
       block_given? ? yield(sentence, token) : token
@@ -17,12 +17,31 @@ def sentence_tokens(filename: '../../output/nlp.txt.xml')
 end
 
 class REXML::Element
-  def id
-    self.attributes['id'].to_i
+  alias_method :to_text, :text
+  remove_method :text
+
+  %w(type idx).each do |attribute_name|
+    define_method attribute_name do
+      self.attributes[attribute_name]
+    end
   end
 
-  def word
-    self.elements['word'].text
+  %w(id).each do |attribute_name|
+    define_method attribute_name do
+      self.attributes[attribute_name].to_i
+    end
+  end
+
+  %w(sentence start end).each do |element_name|
+    define_method element_name do
+      self.elements[element_name].to_text.to_i
+    end
+  end
+
+  %w(word lemma POS NER text governor dependent).each do |element_name|
+    define_method element_name do
+      self.elements[element_name].to_text
+    end
   end
 end
 

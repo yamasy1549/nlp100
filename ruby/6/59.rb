@@ -36,6 +36,7 @@ def evaluate(expr, pos: 'NP')
 end
 
 xml_elements.each('root/document/sentences/sentence/parse') do |parse|
-  parsed = parse(parse.text)
-  evaluate(parsed)
+  parse.to_text
+    .yield_self { |text| parse(text) }
+    .yield_self { |text| evaluate(text) }
 end

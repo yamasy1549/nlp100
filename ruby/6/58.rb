@@ -5,13 +5,13 @@ xml_elements.each('root/document/sentences/sentence') do |sentence|
   dobj_list = []
 
   sentence.elements.each('dependencies[@type="collapsed-dependencies"]/dep') do |dep|
-    type = dep.attributes['type']
+    type = dep.type
 
     if type == 'nsubj' || type == 'dobj'
-      governor = dep.elements['governor'].text
-      dependent = dep.elements['dependent'].text
-      governor_idx = dep.elements['governor'].attributes['idx'].to_i
-      dependent_idx = dep.elements['dependent'].attributes['idx'].to_i
+      governor = dep.governor
+      dependent = dep.dependent
+      governor_idx = dep.elements['governor'].idx.to_i
+      dependent_idx = dep.elements['dependent'].idx.to_i
       eval("#{type}_list") << Dependant.new(governor, dependent, governor_idx, dependent_idx)
     end
   end
