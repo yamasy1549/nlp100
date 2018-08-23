@@ -3,10 +3,10 @@
 __pycache__
 __init__.py
 ruby/7/mongo/
-ruby/8/models/
 **/*.dump
 **/*.mat
 **/*.pickle
+**/*.pkl
 
 # 重いので
 data/enwiki-20150112-400*
