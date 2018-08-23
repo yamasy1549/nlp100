@@ -10,9 +10,8 @@ pyfrom 'sklearn.linear_model', import: :LogisticRegression
 pyfrom 'sklearn.externals', import: :joblib
 
 def train_test_data(test_size: 0)
-  labels = []
-  File.open('../../data/sentiment.txt') do |file|
-    labels = file.each_line.map { |line| line[0..1] }
+  labels = File.open('../../data/sentiment.txt').each_line.map do |line|
+    line[0..1]
   end
 
   _, bows = bag_of_words
@@ -22,5 +21,4 @@ end
 def logreg(x_train, y_train)
   model = LogisticRegression.()
   model.fit(x_train, y_train)
-  model
 end
