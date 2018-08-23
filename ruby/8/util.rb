@@ -11,11 +11,22 @@ class String
     stopwords.include?(self.downcase)
   end
 
-  def word_freqs
-    word_groups = self.split.group_by do |word|
-      STEMMER.stem(word) unless word.stopword? || word.match?(/[[:^alpha:]]/)
+  def use_as_feature?
+    !self.stopword? && !self.match?(/[[:^alpha:]]/)
+  end
+
+  def to_word_freqs
+    freqs = {}
+
+    self.split.each do |word|
+      if word.use_as_feature?
+        stemmed_word = STEMMER.stem(word)
+        freqs[stemmed_word] ||= 0
+        freqs[stemmed_word] += 1
+      end
     end
-    word_groups.map{ |key, words| [key, words.count] }.to_h.reject{ |key, _| key.nil? }
+
+    freqs
   end
 end
 
@@ -26,16 +37,14 @@ def word_freqs(filename: '../../data/sentiment.txt', sentences: nil)
     progressbar = ProgressBar.create(title: 'Freqs', total: sentences.count)
     freqs = sentences.map do |sentence|
       progressbar.increment
-      sentence.word_freqs
+      sentence.to_word_freqs
     end
   else
     progressbar = ProgressBar.create(title: 'Freqs', total: `wc -l #{filename}`.to_i)
     File.open(filename) do |file|
-      file.each_slice(1000) do |chunk|
-        freqs += chunk.map do |line|
-          progressbar.increment
-          line.scrub('?').chomp[3...-1].word_freqs
-        end
+      freqs = file.map do |line|
+        progressbar.increment
+        line.scrub('?').chomp[3...-1].to_word_freqs
       end
     end
   end
@@ -46,14 +55,17 @@ end
 
 def bag_of_words(at_least: 3)
   freqs = word_freqs
-  words = freqs.map(&:keys).flatten.uniq
-  bow = words.product([0]).to_h
+  _bow = {}
+
+  freqs.each do |freq|
+    freq.each do |word, count|
+      _bow[word] ||= 0
+      _bow[word] += count
+    end
+  end
 
   # 単語の出現回数がat_least回以上のものだけ
-  freqs.each do |freq|
-    bow.merge!(freq) { |_, v0, v1| v0 + v1 }
-  end
-  words = bow.select{ |_, count| count >= at_least }.keys
+  words = _bow.select{ |_, count| count >= at_least }.keys
   bow = words.product([0]).to_h
 
   if block_given?
@@ -62,8 +74,11 @@ def bag_of_words(at_least: 3)
     progressbar = ProgressBar.create(title: 'Bows', total: freqs.count)
     bows = freqs.map do |freq|
       progressbar.increment
-      useful_freq = freq.select { |key, _| bow[key] }
-      bow.merge(useful_freq){ |key, v0, v1| v0 + v1 }.values
+      freq_bow = bow.clone
+      freq.each do |word, count|
+        freq_bow[word] += count if words.include?(word)
+      end
+      freq_bow.values
     end
     progressbar.finish
 
