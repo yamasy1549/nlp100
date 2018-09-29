@@ -1,7 +1,7 @@
 require './util'
 require './train'
 
-model_file = 'models/73.pkl'
+model_file = '73.pkl'
 if File.exist?(model_file)
   model = joblib.load(model_file)
 else
@@ -20,8 +20,11 @@ freqs = word_freqs(sentences: sentences)
 bows = []
 bag_of_words do |words, _, bow|
   bows = freqs.map do |freq|
-    useful_freq = freq.select { |key, _| bow[key] }
-    bow.merge(useful_freq){ |key, v0, v1| v0 + v1 }.values
+    freq_bow = bow.clone
+    freq.each do |word, count|
+      freq_bow[word] += count if words.include?(word)
+    end
+    freq_bow.values
   end
 end
 

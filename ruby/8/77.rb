@@ -1,5 +1,3 @@
-require './util'
-
 accuracy_list = []
 precision_list = []
 recall_list = []
